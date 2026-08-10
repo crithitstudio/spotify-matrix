@@ -549,6 +549,10 @@ void Game::tickEnding(float dt) {
                 execAction("teleport:lobby");
                 execAction("ambient:amb_morning");
                 for (size_t i = 0; i < world.lights.size(); ++i) world.lights[i].on = false;
+                for (size_t i = 0; i < content.props.size(); ++i) {
+                    if (content.props[i].id.rfind("win@A", 0) == 0) world.props[i].hidden = true;
+                    if (content.props[i].id.rfind("win@B", 0) == 0) world.props[i].hidden = false;
+                }
                 flags.insert("morning");
                 execAction("door:lobby_exit:unlock");
                 tasks.clear();

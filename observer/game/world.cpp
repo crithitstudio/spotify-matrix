@@ -1,6 +1,8 @@
 // THE OBSERVER - world: procedural building geometry, collision, doors.
 #include "game.h"
 
+#include <algorithm>
+
 namespace {
 constexpr float WT = 0.06f;         // wall inset (half thickness)
 constexpr float DOOR_W = 1.02f;

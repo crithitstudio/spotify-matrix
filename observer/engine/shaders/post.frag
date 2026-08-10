@@ -74,9 +74,10 @@ void main() {
         col *= 1.0 - scanAmt * 0.20 * smoothstep(0.93, 1.0, bar);
     }
 
-    // film grain + static burst
+    // film grain (luminance-weighted so blacks stay black) + static burst
     float n = hash12(vUv * vec2(1920.0, 1080.0) + fract(time) * 173.13);
-    col += (n - 0.5) * grain;
+    float glum = dot(col, vec3(0.299, 0.587, 0.114));
+    col += (n - 0.5) * grain * (0.30 + 0.70 * smoothstep(0.0, 0.35, glum));
     if (burst > 0.001) {
         float sn = hash12(vUv * vec2(917.0, 533.0) + fract(time * 7.31) * 91.7);
         col = mix(col, vec3(sn), clamp(burst, 0.0, 1.0));

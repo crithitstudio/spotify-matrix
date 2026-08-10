@@ -109,7 +109,9 @@ add_executable(observer_tests
   tests/test_systems.cpp
   game/content.cpp
   game/world.cpp
-  game/systems.cpp)
+  game/systems.cpp
+  game/script.cpp
+  game/ui.cpp)
 target_include_directories(observer_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/game)
 target_link_libraries(observer_tests PRIVATE iris)
 target_compile_definitions(observer_tests PRIVATE OBSERVER_UNIT_TESTS=1)

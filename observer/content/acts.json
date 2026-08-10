@@ -1,0 +1,262 @@
+{
+  "acts": [
+    {
+      "index": 1, "title": "23:02 — HALCYON COURT", "clock": "23:00",
+      "ambient": 1.0, "interval": 55, "witnessCap": 0,
+      "beats": [
+        { "id": "a1_open", "trigger": "actstart", "do": [
+          "sub:Night shift. Three weeks until they tear this place down.",
+          "cue:2.5:voice:voice_super_1:\"Machine's for you. Day man quit. Note's on the desk — follow it, lock up after your rounds. Don't call unless the building's on fire.\"",
+          "task:add:signin:Read the handover note (Security office)",
+          "cue:6:sub:The clipboard is on your belt. [Tab]"
+        ]},
+        { "id": "a1_note", "trigger": "doc_read", "arg": "handover_note", "do": [
+          "task:done:signin",
+          "task:add:laundry:Shut off the running washer (Laundry)",
+          "task:add:inspect1a:Photograph the vacancy damage in 1A — key is on the board",
+          "sub:Keys hang by the shelf. The camera is in your jacket. [C]"
+        ]},
+        { "id": "a1_laundrydone", "trigger": "action", "arg": "laundry_stop", "do": [
+          "task:done:laundry", "snd:switch_click",
+          "sub:The drum spins down. The quiet is worse.",
+          "cue:8:sndat:pipe_knock:boiler_hall"
+        ]},
+        { "id": "a1_key", "trigger": "pickup", "arg": "key_1a", "do": [
+          "sub:1A. Second floor... no. First. It's the first floor."
+        ]},
+        { "id": "a1_enter1a", "trigger": "enter", "arg": "apt_1A", "do": [
+          "sub:Dust sheets. They left the TV.",
+          "cue:14:snd:tv_static", "cue:14.2:prop:a1_tv:tex:plaster"
+        ]},
+        { "id": "a1_stain", "trigger": "action", "arg": "inspect_stain", "do": [
+          "sub:Water damage. That shape wasn't in the day man's report."
+        ]},
+        { "id": "a1_photo", "trigger": "photo", "do": [
+          "task:done:inspect1a",
+          "sub:One for the file.",
+          "cue:3:event:ev_writing_1a"
+        ]},
+        { "id": "a1_mug", "trigger": "time", "at": 4, "do": [ "event:ev_mug" ]},
+        { "id": "a1_creak", "trigger": "time", "at": 7, "do": [ "event:ev_creak_lobby" ]},
+        { "id": "a1_phone", "trigger": "task_done", "arg": "inspect1a", "do": [
+          "cue:10:event:ev_phone_first"
+        ]},
+        { "id": "a1_answer", "trigger": "phone", "arg": "answered", "do": [
+          "voice:voice_super_2:\"You settling in? Cameras still work, mostly. Log your round at the desk and stop wandering. Place plays tricks when it's empty.\"",
+          "task:add:loground:Log the round on the security monitors"
+        ]},
+        { "id": "a1_monitor", "trigger": "monitor", "arg": "main", "do": [
+          "task:done:loground",
+          "sub:Eight cameras. Eight empty rooms.",
+          "cue:6:snd:static_burst",
+          "cue:14:act:2"
+        ]},
+        { "id": "a1_tv", "trigger": "action", "arg": "tv_1a", "do": [
+          "snd:tv_static", "sub:Unplugged. Of course it is."
+        ]}
+      ]
+    },
+    {
+      "index": 2, "title": "00:31", "clock": "00:31",
+      "ambient": 0.9, "interval": 44, "witnessCap": 1,
+      "beats": [
+        { "id": "a2_open", "trigger": "actstart", "do": [
+          "snd:power_down",
+          "lightsroom:lobby:off", "lightsroom:security:off", "lightsroom:mailroom:off",
+          "task:add:breaker:Power tripped — reset the breaker (service corridor)",
+          "sub:The monitors die one by one."
+        ]},
+        { "id": "a2_breaker", "trigger": "switch", "arg": "breaker_done", "do": [
+          "task:done:breaker",
+          "cue:2:sndat:knock_triple:apt_2A",
+          "cue:3.5:task:add:knocking:Something is knocking on the second floor",
+          "cue:3.5:sub:Three knocks. From an empty floor.",
+          "prop:key_master_prop:show",
+          "cue:6:sub:The master key should be on the security board."
+        ]},
+        { "id": "a2_master", "trigger": "pickup", "arg": "key_master", "do": [
+          "sub:Every door in the building. Heavier than it looks."
+        ]},
+        { "id": "a2_hall2", "trigger": "enter", "arg": "hall_2", "do": [
+          "sndat:knock_triple:apt_2A"
+        ]},
+        { "id": "a2_2a", "trigger": "enter", "arg": "apt_2A", "do": [
+          "sub:Tenant hoarded thirty years of paper. Nobody knocked.",
+          "task:done:knocking"
+        ]},
+        { "id": "a2_letter", "trigger": "doc_read", "arg": "hoarder_letter", "do": [
+          "task:add:check2c:Check the dancer's flat — 2C",
+          "cue:1:sub:\"The man in my photographs.\" Right."
+        ]},
+        { "id": "a2_2c", "trigger": "enter", "arg": "apt_2C", "do": [
+          "sub:She covered one mirror before she left."
+        ]},
+        { "id": "a2_uncover", "trigger": "action", "arg": "uncover_2c", "do": [
+          "prop:c2_covered:hide", "prop:c2_mirror_c_frame:show",
+          "task:done:check2c", "snd:paper",
+          "sub:Just a mirror. Just you.",
+          "cue:2.5:event:ev_mirror_first"
+        ]},
+        { "id": "a2_sighting", "trigger": "task_done", "arg": "check2c", "do": [
+          "cue:20:witness:distant:hall_2:0.8:-1.4",
+          "cue:20.2:snd:stinger",
+          "cue:26:sub:There was someone at the end of the hall."
+        ]},
+        { "id": "a2_cctv", "trigger": "time", "at": 9, "do": [ "event:ev_cctv_lobby" ]},
+        { "id": "a2_elev", "trigger": "time", "at": 13, "do": [
+          "snd:elevator_ding",
+          "task:add:elevator:The elevator moved on its own — check the cab",
+          "sub:Nobody called the elevator."
+        ]},
+        { "id": "a2_cab", "trigger": "enter", "arg": "elevator_0", "do": [
+          "task:done:elevator",
+          "snd:static_burst",
+          "sub:The inspection sticker expired in 1987.",
+          "cue:5:act:3"
+        ]}
+      ]
+    },
+    {
+      "index": 3, "title": "02:14", "clock": "02:14",
+      "ambient": 0.78, "interval": 36, "witnessCap": 3,
+      "beats": [
+        { "id": "a3_open", "trigger": "actstart", "do": [
+          "sub:The building has stopped pretending to sleep.",
+          "cue:4:sndbehind:whisper",
+          "task:add:crying:Something is crying on the third floor"
+        ]},
+        { "id": "a3_hall3", "trigger": "enter", "arg": "hall_3", "do": [
+          "sndat:crying:apt_3B"
+        ]},
+        { "id": "a3_3b", "trigger": "enter", "arg": "apt_3B", "do": [
+          "task:done:crying",
+          "sub:It stops the moment you open the door.",
+          "cue:6:prop:n3_mobile:move:0:0:40",
+          "cue:6.2:snd:door_creak"
+        ]},
+        { "id": "a3_chair", "trigger": "action", "arg": "look_chair", "do": [
+          "sub:A rocking chair, still warm. You write: 'cold room'. Your hand writes 'warm'."
+        ]},
+        { "id": "a3_leaktask", "trigger": "time", "at": 3, "do": [
+          "task:add:leak:Document the water damage in 3D (photograph it)"
+        ]},
+        { "id": "a3_leak", "trigger": "action", "arg": "inspect_leak", "do": [
+          "sub:The stain has fingers now. It had a shape like a county map at 23:00."
+        ]},
+        { "id": "a3_leakphoto", "trigger": "photo", "do": [
+          "task:done:leak",
+          "cue:2:snd:polaroid",
+          "cue:6:prop:dk_photo_dev:show", "cue:6:prop:key_records_prop:show",
+          "cue:7:sub:Something is hanging in the darkroom. A fresh print."
+        ]},
+        { "id": "a3_devnote", "trigger": "doc_read", "arg": "photo_dev_note", "do": [
+          "task:add:records:Find what the building keeps in Records (basement)",
+          "sub:You didn't take this photograph.",
+          "cue:2:sndbehind:whisper_look"
+        ]},
+        { "id": "a3_dicta", "trigger": "action", "arg": "dictaphone", "do": [
+          "voice:voice_dicta:\"Unit 3D. Water intrusion along the ceiling line, north wall. Hairline, non-structural. — my voice, my words.\""
+        ]},
+        { "id": "a3_reckey", "trigger": "pickup", "arg": "key_records", "do": [
+          "sub:Why did the photographer have the records key?"
+        ]},
+        { "id": "a3_records", "trigger": "enter", "arg": "records", "do": [
+          "title:RECORDS — SUB-LEVEL 1",
+          "sub:Fifty years of the building watching itself."
+        ]},
+        { "id": "a3_1961", "trigger": "doc_read", "arg": "records_1961_b", "do": [
+          "task:done:records",
+          "prop:key_sub_prop:show",
+          "sub:A brass key is taped behind the last page. 'S3'.",
+          "task:add:site3:Site 3 — the survey mentions a sealed sub-level"
+        ]},
+        { "id": "a3_basewitness", "trigger": "enter", "arg": "basement", "do": [
+          "cue:8:witness:distant:basement:2:6",
+          "cue:8.1:light:l_bs_1:flicker:0.7"
+        ]},
+        { "id": "a3_subkey", "trigger": "pickup", "arg": "key_sub", "do": [
+          "snd:power_down",
+          "cue:1:lightsroom:records:off",
+          "cue:1.5:sub:The lights go out politely, one room at a time.",
+          "cue:5:act:4"
+        ]}
+      ]
+    },
+    {
+      "index": 4, "title": "03:47", "clock": "03:47",
+      "ambient": 0.62, "interval": 30, "witnessCap": 3,
+      "beats": [
+        { "id": "a4_open", "trigger": "actstart", "do": [
+          "ambient:amb_late",
+          "prop:e0bB:show", "prop:e1bB:show", "prop:e2bB:show", "prop:e3bB:show", "prop:e4bB:show",
+          "sub:The elevator panel has a button it didn't have.",
+          "task:add:below:Open the maintenance door. Go down."
+        ]},
+        { "id": "a4_hall4", "trigger": "enter", "arg": "hall_4", "do": [
+          "give:key_4a",
+          "sndat:knock_triple:apt_4A",
+          "sub:The seal on 4A hangs cut. The key waits in the lock."
+        ]},
+        { "id": "a4_4a", "trigger": "enter", "arg": "apt_4A", "do": [
+          "sub:One chair. Facing the wall. Facing is a strong word for furniture."
+        ]},
+        { "id": "a4_scratches", "trigger": "doc_read", "arg": "scratches_4a", "do": [
+          "fear:0.55", "sndbehind:whisper",
+          "cue:3:event:ev_witness_hall4"
+        ]},
+        { "id": "a4_4c_note", "trigger": "doc_read", "arg": "room_note_4c", "do": [
+          "cue:10:event:ev_swap_4c"
+        ]},
+        { "id": "a4_dicta", "trigger": "action", "arg": "dictaphone", "do": [
+          "voice:voice_dicta_wrong:\"Unit 3D. Water intrusion along the ceiling line, north wall. — that is not how you say your own name.\"",
+          "fear:0.6"
+        ]},
+        { "id": "a4_cctvyou", "trigger": "time", "at": 4, "do": [ "event:ev_cctv_you" ]},
+        { "id": "a4_loop", "trigger": "time", "at": 7, "do": [ "event:ev_loop_3" ]},
+        { "id": "a4_subhall", "trigger": "enter", "arg": "subhall", "do": [
+          "task:done:below",
+          "title:SUB-LEVEL 2 — NOT ON THE PLAN",
+          "sub:The blueprints end one floor above your feet."
+        ]},
+        { "id": "a4_survey", "trigger": "doc_read", "arg": "site3_survey", "do": [
+          "task:done:site3",
+          "task:add:vault:Follow the survey line down",
+          "sub:Site 3. Surveyed 1961. Sealed 1961. Doors don't get sealed for being empty."
+        ]},
+        { "id": "a4_vault", "trigger": "enter", "arg": "vault", "do": [
+          "title:————",
+          "task:done:vault",
+          "fear:0.7",
+          "sub:The room is wrong in a way the eye keeps trying to fix.",
+          "cue:6:sndbehind:whisper_showed"
+        ]},
+        { "id": "a4_final", "trigger": "doc_read", "arg": "final_note_vault", "do": [
+          "cue:4:act:5"
+        ]}
+      ]
+    },
+    {
+      "index": 5, "title": "05:12", "clock": "05:12",
+      "ambient": 0.5, "interval": 26, "witnessCap": 4,
+      "beats": [
+        { "id": "a5_open", "trigger": "actstart", "do": [
+          "door:lobby_exit:unlock",
+          "task:add:out:Shift's over. Leave.",
+          "sub:Dawn soon. The demolition crew arrives at six.",
+          "cue:3:snd:stinger"
+        ]},
+        { "id": "a5_watchers", "trigger": "time", "at": 2, "do": [
+          "event:ev_witness_lobby",
+          "cue:12:event:ev_cctv_lobby"
+        ]},
+        { "id": "a5_vault_call", "trigger": "flag", "arg": "exit_denied", "do": [
+          "task:add:down:It is holding the door. Go down and let go of it.",
+          "sub:The building isn't keeping you in. It's keeping you FOR."
+        ]},
+        { "id": "a5_ending", "trigger": "enter", "arg": "vault", "do": [
+          "ending:auto"
+        ]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "unlocked": "Unlocked.",
+  "new_task": "Work order updated.",
+  "wake": "...how did I get here?",
+  "item_key_1a": "key — 1A",
+  "item_key_master": "master key",
+  "item_key_records": "records key",
+  "item_key_sub": "brass key 'S3'",
+  "item_key_4a": "key — 4A",
+  "act_laundry_stop": "Stop the washer",
+  "act_dictaphone": "Play the dictaphone",
+  "act_inspect_stain": "Inspect the stain",
+  "act_inspect_leak": "Inspect the leak",
+  "act_uncover_2c": "Uncover the mirror",
+  "act_look_chair": "Look closer",
+  "act_tv_1a": "Try the TV",
+  "post_witnessed": "It knows the way now.",
+  "post_documented": "The photographs remain. All of them are recent.",
+  "post_reflected": "Your reflection still checks behind itself.",
+  "post_replaced": "It was let out. Something was."
+}

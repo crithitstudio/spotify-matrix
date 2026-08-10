@@ -1,0 +1,35 @@
+// THE OBSERVER — Steamworks app build script.
+// Fill in your real AppID (and depot IDs below) from the Steamworks partner
+// site, then run packaging/steam/push_build.sh (or .bat on Windows).
+"AppBuild"
+{
+	"AppID" "YOUR_APPID"                 // e.g. "1234560"
+	"Desc" "THE OBSERVER — night build"  // shown in Steamworks build history
+	"BuildOutput" "./steam_build_output/"
+	"ContentRoot" "../../dist/"
+	"SetLive" ""                         // set to "beta" or "default" to auto-publish
+
+	"Depots"
+	{
+		// Windows depot (AppID + 1 by convention)
+		"YOUR_APPID_PLUS_1"
+		{
+			"FileMapping"
+			{
+				"LocalPath" "TheObserver-windows-x64/*"
+				"DepotPath" "."
+				"recursive" "1"
+			}
+		}
+		// Linux depot (AppID + 2)
+		"YOUR_APPID_PLUS_2"
+		{
+			"FileMapping"
+			{
+				"LocalPath" "TheObserver-linux-x64/*"
+				"DepotPath" "."
+				"recursive" "1"
+			}
+		}
+	}
+}

@@ -1,0 +1,4807 @@
+{
+  "textures": {
+    "wallpaper_hall": "assets/textures/wallpaper_hall.png",
+    "wallpaper_apt": "assets/textures/wallpaper_apt.png",
+    "plaster": "assets/textures/plaster.png",
+    "concrete_wall": "assets/textures/concrete_wall.png",
+    "carpet_hall": "assets/textures/carpet_hall.png",
+    "parquet": "assets/textures/parquet.png",
+    "linoleum": "assets/textures/linoleum.png",
+    "ceiling_tile": "assets/textures/ceiling_tile.png",
+    "brick_green": "assets/textures/brick_green.png",
+    "concrete_floor": "assets/textures/concrete_floor.png",
+    "door_wood": "assets/textures/door_wood.png",
+    "elevator_doors": "assets/textures/elevator_doors.png",
+    "bathroom_tile": "assets/textures/bathroom_tile.png",
+    "cork_board": "assets/textures/cork_board.png",
+    "paper_aged": "assets/textures/paper_aged.png",
+    "curtain": "assets/textures/curtain.png",
+    "wood_table": "assets/textures/wood_table.png",
+    "bed_fabric": "assets/textures/bed_fabric.png",
+    "window_night": "assets/textures/window_night.png",
+    "breaker_panel": "assets/textures/breaker_panel.png",
+    "blueprint": "assets/textures/blueprint.png",
+    "photo_1961": "assets/textures/photo_1961.png",
+    "witness_s1": "assets/witness/witness_s1.png",
+    "witness_s2": "assets/witness/witness_s2.png",
+    "witness_s3": "assets/witness/witness_s3.png",
+    "witness_s4": "assets/witness/witness_s4.png",
+    "protagonist": "assets/witness/protagonist.png",
+    "protagonist_photo": "assets/textures/protagonist_photo.png",
+    "keyart_menu": "assets/store/keyart_vertical.png"
+  },
+  "sounds": {
+    "step_carpet": "assets/audio/sfx/step_carpet.wav",
+    "step_wood": "assets/audio/sfx/step_wood.wav",
+    "step_concrete": "assets/audio/sfx/step_concrete.wav",
+    "step_lino": "assets/audio/sfx/step_lino.wav",
+    "door_open": "assets/audio/sfx/door_open.wav",
+    "door_close": "assets/audio/sfx/door_close.wav",
+    "door_creak": "assets/audio/sfx/door_creak.wav",
+    "door_slam": "assets/audio/sfx/door_slam.wav",
+    "door_locked": "assets/audio/sfx/door_locked.wav",
+    "unlock": "assets/audio/sfx/unlock.wav",
+    "pickup": "assets/audio/sfx/pickup.wav",
+    "paper": "assets/audio/sfx/paper.wav",
+    "switch_click": "assets/audio/sfx/switch_click.wav",
+    "clipboard": "assets/audio/sfx/clipboard.wav",
+    "camera_up": "assets/audio/sfx/camera_up.wav",
+    "camera_down": "assets/audio/sfx/camera_down.wav",
+    "camera_shutter": "assets/audio/sfx/camera_shutter.wav",
+    "polaroid": "assets/audio/sfx/polaroid.wav",
+    "crt_on": "assets/audio/sfx/crt_on.wav",
+    "crt_off": "assets/audio/sfx/crt_off.wav",
+    "static_burst": "assets/audio/sfx/static_burst.wav",
+    "whisper": "assets/audio/voice/whisper.wav",
+    "whisper_look": "assets/audio/voice/whisper_look.wav",
+    "whisper_showed": "assets/audio/voice/whisper_showed.wav",
+    "knock_triple": "assets/audio/sfx/knock_triple.wav",
+    "pipe_knock": "assets/audio/sfx/pipe_knock.wav",
+    "phone_ring": "assets/audio/sfx/phone_ring.wav",
+    "phone_dead": "assets/audio/sfx/phone_dead.wav",
+    "breaker_thunk": "assets/audio/sfx/breaker_thunk.wav",
+    "power_down": "assets/audio/sfx/power_down.wav",
+    "elevator_move": "assets/audio/sfx/elevator_move.wav",
+    "elevator_ding": "assets/audio/sfx/elevator_ding.wav",
+    "stairs_transition": "assets/audio/sfx/stairs_transition.wav",
+    "crying": "assets/audio/sfx/crying.wav",
+    "footsteps_above": "assets/audio/sfx/footsteps_above.wav",
+    "witness_touch": "assets/audio/sfx/witness_touch.wav",
+    "stinger": "assets/audio/sfx/stinger.wav",
+    "tv_static": "assets/audio/sfx/tv_static.wav",
+    "amb_lobby": "assets/audio/ambient/amb_lobby.wav",
+    "amb_hall": "assets/audio/ambient/amb_hall.wav",
+    "amb_late": "assets/audio/ambient/amb_late.wav",
+    "amb_basement": "assets/audio/ambient/amb_basement.wav",
+    "amb_anomaly": "assets/audio/ambient/amb_anomaly.wav",
+    "amb_morning": "assets/audio/ambient/amb_morning.wav",
+    "voice_super_1": "assets/audio/voice/super_1.wav",
+    "voice_super_2": "assets/audio/voice/super_2.wav",
+    "voice_super_3": "assets/audio/voice/super_3.wav",
+    "voice_dicta": "assets/audio/voice/dicta.wav",
+    "voice_dicta_wrong": "assets/audio/voice/dicta_wrong.wav",
+    "witness_final": "assets/audio/voice/witness_final.wav"
+  },
+  "playerRoom": "lobby",
+  "playerStart": [
+    2.5,
+    0,
+    5.5
+  ],
+  "playerYaw": 240,
+  "rooms": [
+    {
+      "id": "lobby",
+      "name": "Lobby",
+      "min": [
+        0,
+        0,
+        0
+      ],
+      "max": [
+        10,
+        2.7,
+        8
+      ],
+      "wall": "plaster",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 0,
+      "floorUv": 0.7
+    },
+    {
+      "id": "security",
+      "name": "Security Office",
+      "min": [
+        10,
+        0,
+        0
+      ],
+      "max": [
+        14.5,
+        2.7,
+        4.5
+      ],
+      "wall": "plaster",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 0
+    },
+    {
+      "id": "mailroom",
+      "name": "Mail Room",
+      "min": [
+        10,
+        0,
+        4.5
+      ],
+      "max": [
+        14.5,
+        2.7,
+        8
+      ],
+      "wall": "plaster",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 0
+    },
+    {
+      "id": "laundry",
+      "name": "Laundry",
+      "min": [
+        0,
+        0,
+        8
+      ],
+      "max": [
+        6,
+        2.7,
+        14
+      ],
+      "wall": "bathroom_tile",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 0,
+      "wallUv": 0.8
+    },
+    {
+      "id": "boiler_hall",
+      "name": "Service Corridor",
+      "min": [
+        6,
+        0,
+        8
+      ],
+      "max": [
+        10,
+        2.7,
+        14
+      ],
+      "wall": "brick_green",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": 0
+    },
+    {
+      "id": "elevator_0",
+      "name": "Elevator",
+      "min": [
+        4,
+        0,
+        -2.2
+      ],
+      "max": [
+        6,
+        2.7,
+        0
+      ],
+      "wall": "elevator_doors",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 0,
+      "wallUv": 0.9
+    },
+    {
+      "id": "hall_1",
+      "name": "1st Floor Hallway",
+      "min": [
+        0,
+        3.2,
+        -2.8
+      ],
+      "max": [
+        12,
+        5.9,
+        0
+      ],
+      "wall": "wallpaper_hall",
+      "floor": "carpet_hall",
+      "ceil": "ceiling_tile",
+      "zone": 1
+    },
+    {
+      "id": "elevator_1",
+      "name": "Elevator",
+      "min": [
+        4,
+        3.2,
+        -4.8
+      ],
+      "max": [
+        6,
+        5.9,
+        -2.8
+      ],
+      "wall": "elevator_doors",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 1,
+      "wallUv": 0.9
+    },
+    {
+      "id": "apt_1B",
+      "name": "Apartment 1B",
+      "min": [
+        0,
+        3.2,
+        0
+      ],
+      "max": [
+        4.5,
+        5.9,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 1
+    },
+    {
+      "id": "bath_1b",
+      "name": "Bathroom",
+      "min": [
+        4.5,
+        3.2,
+        3.8
+      ],
+      "max": [
+        6,
+        5.9,
+        6
+      ],
+      "wall": "bathroom_tile",
+      "floor": "linoleum",
+      "ceil": "plaster",
+      "zone": 1,
+      "wallUv": 0.9
+    },
+    {
+      "id": "apt_1A",
+      "name": "Apartment 1A",
+      "min": [
+        6,
+        3.2,
+        0
+      ],
+      "max": [
+        12,
+        5.9,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 1,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "hall_2",
+      "name": "2nd Floor Hallway",
+      "min": [
+        0,
+        6.4,
+        -2.8
+      ],
+      "max": [
+        12,
+        9.1,
+        0
+      ],
+      "wall": "wallpaper_hall",
+      "floor": "carpet_hall",
+      "ceil": "ceiling_tile",
+      "zone": 2
+    },
+    {
+      "id": "elevator_2",
+      "name": "Elevator",
+      "min": [
+        4,
+        6.4,
+        -4.8
+      ],
+      "max": [
+        6,
+        9.1,
+        -2.8
+      ],
+      "wall": "elevator_doors",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 2,
+      "wallUv": 0.9
+    },
+    {
+      "id": "apt_2A",
+      "name": "Apartment 2A",
+      "min": [
+        0,
+        6.4,
+        0
+      ],
+      "max": [
+        6,
+        9.1,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 2,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "apt_2C",
+      "name": "Apartment 2C",
+      "min": [
+        6,
+        6.4,
+        0
+      ],
+      "max": [
+        12,
+        9.1,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 2,
+      "tags": [
+        "apartment",
+        "mirror"
+      ]
+    },
+    {
+      "id": "hall_3",
+      "name": "3rd Floor Hallway",
+      "min": [
+        0,
+        9.6,
+        -2.8
+      ],
+      "max": [
+        12,
+        12.3,
+        0
+      ],
+      "wall": "wallpaper_hall",
+      "floor": "carpet_hall",
+      "ceil": "ceiling_tile",
+      "zone": 3
+    },
+    {
+      "id": "elevator_3",
+      "name": "Elevator",
+      "min": [
+        4,
+        9.6,
+        -4.8
+      ],
+      "max": [
+        6,
+        12.3,
+        -2.8
+      ],
+      "wall": "elevator_doors",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 3,
+      "wallUv": 0.9
+    },
+    {
+      "id": "apt_3B",
+      "name": "Apartment 3B",
+      "min": [
+        0,
+        9.6,
+        0
+      ],
+      "max": [
+        6,
+        12.3,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 3,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "living_3d",
+      "name": "Apartment 3D",
+      "min": [
+        6,
+        9.6,
+        0
+      ],
+      "max": [
+        12,
+        12.3,
+        3.6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 3,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "bed_3d",
+      "name": "3D \u2014 Bedroom",
+      "min": [
+        6,
+        9.6,
+        3.6
+      ],
+      "max": [
+        10,
+        12.3,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 3
+    },
+    {
+      "id": "dark_3d",
+      "name": "3D \u2014 Darkroom",
+      "min": [
+        10,
+        9.6,
+        3.6
+      ],
+      "max": [
+        12,
+        12.3,
+        6
+      ],
+      "wall": "plaster",
+      "floor": "linoleum",
+      "ceil": "plaster",
+      "zone": 3
+    },
+    {
+      "id": "hall_4",
+      "name": "4th Floor Hallway",
+      "min": [
+        0,
+        12.8,
+        -2.8
+      ],
+      "max": [
+        12,
+        15.5,
+        0
+      ],
+      "wall": "wallpaper_hall",
+      "floor": "carpet_hall",
+      "ceil": "ceiling_tile",
+      "zone": 4
+    },
+    {
+      "id": "elevator_4",
+      "name": "Elevator",
+      "min": [
+        4,
+        12.8,
+        -4.8
+      ],
+      "max": [
+        6,
+        15.5,
+        -2.8
+      ],
+      "wall": "elevator_doors",
+      "floor": "linoleum",
+      "ceil": "ceiling_tile",
+      "zone": 4,
+      "wallUv": 0.9
+    },
+    {
+      "id": "apt_4A",
+      "name": "Apartment 4A",
+      "min": [
+        0,
+        12.8,
+        0
+      ],
+      "max": [
+        6,
+        15.5,
+        6
+      ],
+      "wall": "plaster",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 4,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "apt_4C",
+      "name": "Apartment 4C",
+      "min": [
+        6,
+        12.8,
+        0
+      ],
+      "max": [
+        12,
+        15.5,
+        6
+      ],
+      "wall": "wallpaper_apt",
+      "floor": "parquet",
+      "ceil": "plaster",
+      "zone": 4,
+      "tags": [
+        "apartment"
+      ]
+    },
+    {
+      "id": "basement",
+      "name": "Basement",
+      "min": [
+        0,
+        -3.2,
+        0
+      ],
+      "max": [
+        10,
+        -0.5,
+        8
+      ],
+      "wall": "brick_green",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": -1,
+      "tags": [
+        "basement"
+      ]
+    },
+    {
+      "id": "elevator_b1",
+      "name": "Elevator",
+      "min": [
+        4,
+        -3.2,
+        -2.2
+      ],
+      "max": [
+        6,
+        -0.5,
+        0
+      ],
+      "wall": "elevator_doors",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": -1,
+      "tags": [
+        "basement"
+      ]
+    },
+    {
+      "id": "records",
+      "name": "Records Room",
+      "min": [
+        10,
+        -3.2,
+        0
+      ],
+      "max": [
+        14,
+        -0.5,
+        6
+      ],
+      "wall": "brick_green",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": -1,
+      "tags": [
+        "basement"
+      ]
+    },
+    {
+      "id": "subhall",
+      "name": "Sub-corridor",
+      "min": [
+        0,
+        -3.2,
+        8
+      ],
+      "max": [
+        4,
+        -0.5,
+        14
+      ],
+      "wall": "concrete_wall",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": -1,
+      "tags": [
+        "basement"
+      ]
+    },
+    {
+      "id": "vault",
+      "name": "\u2014\u2014\u2014",
+      "min": [
+        0,
+        -6.6,
+        14
+      ],
+      "max": [
+        12,
+        -3.4,
+        26
+      ],
+      "wall": "concrete_wall",
+      "floor": "concrete_floor",
+      "ceil": "concrete_wall",
+      "zone": -2,
+      "tags": [
+        "basement",
+        "anomaly"
+      ],
+      "wallUv": 0.35,
+      "floorUv": 0.35
+    }
+  ],
+  "doors": [
+    {
+      "id": "lobby_exit",
+      "a": "lobby",
+      "b": "lobby",
+      "pos": [
+        0,
+        0,
+        4
+      ],
+      "axis": 0,
+      "locked": true,
+      "label": "Main entrance",
+      "threshold": true,
+      "to": "lobby_exit"
+    },
+    {
+      "id": "d_sec",
+      "a": "lobby",
+      "b": "security",
+      "pos": [
+        10,
+        0,
+        2.2
+      ],
+      "axis": 0,
+      "label": "Security"
+    },
+    {
+      "id": "d_mail",
+      "a": "lobby",
+      "b": "mailroom",
+      "pos": [
+        10,
+        0,
+        6.2
+      ],
+      "axis": 0,
+      "label": "Mail room"
+    },
+    {
+      "id": "d_laundry",
+      "a": "lobby",
+      "b": "laundry",
+      "pos": [
+        3,
+        0,
+        8
+      ],
+      "axis": 1,
+      "label": "Laundry"
+    },
+    {
+      "id": "d_boiler",
+      "a": "lobby",
+      "b": "boiler_hall",
+      "pos": [
+        8,
+        0,
+        8
+      ],
+      "axis": 1,
+      "label": "Service corridor"
+    },
+    {
+      "id": "d_elev0",
+      "a": "lobby",
+      "b": "elevator_0",
+      "pos": [
+        5,
+        0,
+        0
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "stair_0_up",
+      "a": "lobby",
+      "b": "lobby",
+      "pos": [
+        8,
+        0,
+        0
+      ],
+      "axis": 1,
+      "threshold": true,
+      "to": "stair_1_down",
+      "label": "Stairs up"
+    },
+    {
+      "id": "stair_0_down",
+      "a": "boiler_hall",
+      "b": "boiler_hall",
+      "pos": [
+        8,
+        0,
+        14
+      ],
+      "axis": 1,
+      "threshold": true,
+      "to": "stair_b_up",
+      "label": "Stairs down \u2014 basement"
+    },
+    {
+      "id": "stair_1_down",
+      "a": "hall_1",
+      "b": "hall_1",
+      "pos": [
+        0,
+        3.2,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_0_up",
+      "label": "Stairs down"
+    },
+    {
+      "id": "stair_1_up",
+      "a": "hall_1",
+      "b": "hall_1",
+      "pos": [
+        12,
+        3.2,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_2_down",
+      "label": "Stairs up"
+    },
+    {
+      "id": "d_elev1",
+      "a": "hall_1",
+      "b": "elevator_1",
+      "pos": [
+        5,
+        3.2,
+        -2.8
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "d_1b",
+      "a": "hall_1",
+      "b": "apt_1B",
+      "pos": [
+        2.5,
+        3.2,
+        0
+      ],
+      "axis": 1,
+      "label": "1B \u2014 caretaker"
+    },
+    {
+      "id": "d_1b_bath",
+      "a": "apt_1B",
+      "b": "bath_1b",
+      "pos": [
+        4.5,
+        3.2,
+        4.9
+      ],
+      "axis": 0,
+      "label": "Bathroom"
+    },
+    {
+      "id": "d_1a",
+      "a": "hall_1",
+      "b": "apt_1A",
+      "pos": [
+        9.5,
+        3.2,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_1a",
+      "label": "1A"
+    },
+    {
+      "id": "stair_2_down",
+      "a": "hall_2",
+      "b": "hall_2",
+      "pos": [
+        0,
+        6.4,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_1_up",
+      "label": "Stairs down"
+    },
+    {
+      "id": "stair_2_up",
+      "a": "hall_2",
+      "b": "hall_2",
+      "pos": [
+        12,
+        6.4,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_3_down",
+      "label": "Stairs up"
+    },
+    {
+      "id": "d_elev2",
+      "a": "hall_2",
+      "b": "elevator_2",
+      "pos": [
+        5,
+        6.4,
+        -2.8
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "d_2a",
+      "a": "hall_2",
+      "b": "apt_2A",
+      "pos": [
+        2.5,
+        6.4,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_master",
+      "label": "2A"
+    },
+    {
+      "id": "d_2c",
+      "a": "hall_2",
+      "b": "apt_2C",
+      "pos": [
+        9.5,
+        6.4,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_master",
+      "label": "2C"
+    },
+    {
+      "id": "stair_3_down",
+      "a": "hall_3",
+      "b": "hall_3",
+      "pos": [
+        0,
+        9.6,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_2_up",
+      "label": "Stairs down"
+    },
+    {
+      "id": "stair_3_up",
+      "a": "hall_3",
+      "b": "hall_3",
+      "pos": [
+        12,
+        9.6,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_4_down",
+      "label": "Stairs up"
+    },
+    {
+      "id": "d_elev3",
+      "a": "hall_3",
+      "b": "elevator_3",
+      "pos": [
+        5,
+        9.6,
+        -2.8
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "d_3b",
+      "a": "hall_3",
+      "b": "apt_3B",
+      "pos": [
+        2.5,
+        9.6,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_master",
+      "label": "3B"
+    },
+    {
+      "id": "d_3d",
+      "a": "hall_3",
+      "b": "living_3d",
+      "pos": [
+        9.5,
+        9.6,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_master",
+      "label": "3D"
+    },
+    {
+      "id": "d_3d_bed",
+      "a": "living_3d",
+      "b": "bed_3d",
+      "pos": [
+        8,
+        9.6,
+        3.6
+      ],
+      "axis": 1,
+      "label": "Bedroom"
+    },
+    {
+      "id": "d_3d_dark",
+      "a": "bed_3d",
+      "b": "dark_3d",
+      "pos": [
+        10,
+        9.6,
+        4.8
+      ],
+      "axis": 0,
+      "label": "Darkroom"
+    },
+    {
+      "id": "stair_4_down",
+      "a": "hall_4",
+      "b": "hall_4",
+      "pos": [
+        0,
+        12.8,
+        -1.4
+      ],
+      "axis": 0,
+      "threshold": true,
+      "to": "stair_3_up",
+      "label": "Stairs down"
+    },
+    {
+      "id": "stair_4_up",
+      "a": "hall_4",
+      "b": "hall_4",
+      "pos": [
+        12,
+        12.8,
+        -1.4
+      ],
+      "axis": 0,
+      "locked": true,
+      "threshold": true,
+      "to": "stair_4_up",
+      "label": "Roof access"
+    },
+    {
+      "id": "d_elev4",
+      "a": "hall_4",
+      "b": "elevator_4",
+      "pos": [
+        5,
+        12.8,
+        -2.8
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "d_4a",
+      "a": "hall_4",
+      "b": "apt_4A",
+      "pos": [
+        2.5,
+        12.8,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_4a",
+      "label": "4A \u2014 sealed"
+    },
+    {
+      "id": "d_4c",
+      "a": "hall_4",
+      "b": "apt_4C",
+      "pos": [
+        9.5,
+        12.8,
+        0
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_master",
+      "label": "4C"
+    },
+    {
+      "id": "stair_b_up",
+      "a": "basement",
+      "b": "basement",
+      "pos": [
+        8,
+        -3.2,
+        0
+      ],
+      "axis": 1,
+      "threshold": true,
+      "to": "stair_0_down",
+      "label": "Stairs up"
+    },
+    {
+      "id": "d_elevb1",
+      "a": "basement",
+      "b": "elevator_b1",
+      "pos": [
+        5,
+        -3.2,
+        0
+      ],
+      "axis": 1,
+      "tex": "elevator_doors",
+      "label": "Elevator"
+    },
+    {
+      "id": "d_records",
+      "a": "basement",
+      "b": "records",
+      "pos": [
+        10,
+        -3.2,
+        3
+      ],
+      "axis": 0,
+      "locked": true,
+      "key": "key_records",
+      "label": "Records"
+    },
+    {
+      "id": "d_subhall",
+      "a": "basement",
+      "b": "subhall",
+      "pos": [
+        2,
+        -3.2,
+        8
+      ],
+      "axis": 1,
+      "locked": true,
+      "key": "key_sub",
+      "label": "Maintenance \u2014 NO ENTRY"
+    },
+    {
+      "id": "d_vault",
+      "a": "subhall",
+      "b": "subhall",
+      "pos": [
+        2,
+        -3.2,
+        14
+      ],
+      "axis": 1,
+      "threshold": true,
+      "to": "d_vault_land",
+      "label": "\u2014\u2014\u2014",
+      "tex": "elevator_doors"
+    },
+    {
+      "id": "d_vault_land",
+      "a": "vault",
+      "b": "vault",
+      "pos": [
+        2,
+        -6.6,
+        14
+      ],
+      "axis": 1,
+      "threshold": true,
+      "to": "d_vault",
+      "label": "The way back",
+      "tex": "elevator_doors"
+    }
+  ],
+  "props": [
+    {
+      "id": "lobby_desk",
+      "room": "lobby",
+      "pos": [
+        7.6,
+        0,
+        6.4
+      ],
+      "size": [
+        2.2,
+        1.05,
+        0.8
+      ],
+      "yaw": 0,
+      "tex": "wood_table"
+    },
+    {
+      "id": "lobby_phone",
+      "room": "lobby",
+      "pos": [
+        7.2,
+        1.05,
+        6.5
+      ],
+      "size": [
+        0.28,
+        0.14,
+        0.22
+      ],
+      "tex": "door_wood",
+      "tint": [
+        0.25,
+        0.24,
+        0.24,
+        1
+      ],
+      "collide": false,
+      "interact": "phone:lobby"
+    },
+    {
+      "id": "lobby_mug",
+      "room": "lobby",
+      "pos": [
+        8.2,
+        1.05,
+        6.3
+      ],
+      "size": [
+        0.1,
+        0.12,
+        0.1
+      ],
+      "tex": "bathroom_tile",
+      "tint": [
+        0.8,
+        0.5,
+        0.4,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "lobby_board",
+      "room": "lobby",
+      "type": "quad",
+      "pos": [
+        4.5,
+        1.5,
+        0.075
+      ],
+      "size": [
+        2.2,
+        1.2,
+        1
+      ],
+      "yaw": 180,
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "lobby_sign",
+      "room": "lobby",
+      "type": "quad",
+      "pos": [
+        1.8,
+        1.5,
+        0.075
+      ],
+      "size": [
+        0.9,
+        1.2,
+        1
+      ],
+      "yaw": 180,
+      "tex": "blueprint",
+      "collide": false,
+      "interact": "read:demolition_notice"
+    },
+    {
+      "id": "lobby_bench",
+      "room": "lobby",
+      "pos": [
+        0.5,
+        0,
+        6.2
+      ],
+      "size": [
+        0.6,
+        0.45,
+        1.8
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "win@A_lobby",
+      "room": "lobby",
+      "type": "quad",
+      "pos": [
+        0.075,
+        1.5,
+        1.8
+      ],
+      "size": [
+        1.6,
+        1.3,
+        1
+      ],
+      "yaw": 90,
+      "tex": "window_night",
+      "emissive": 0.45,
+      "collide": false
+    },
+    {
+      "id": "win@B_lobby",
+      "room": "lobby",
+      "type": "quad",
+      "pos": [
+        0.075,
+        1.5,
+        1.8
+      ],
+      "size": [
+        1.6,
+        1.3,
+        1
+      ],
+      "yaw": 90,
+      "tex": "paper_aged",
+      "emissive": 1.6,
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "mailboxes",
+      "room": "lobby",
+      "pos": [
+        9.7,
+        0.8,
+        4.0
+      ],
+      "size": [
+        0.35,
+        1.3,
+        2.4
+      ],
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "sec_desk",
+      "room": "security",
+      "pos": [
+        12.4,
+        0,
+        1.1
+      ],
+      "size": [
+        2.6,
+        1.0,
+        0.9
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "sec_mon_main",
+      "room": "security",
+      "pos": [
+        11.6,
+        1.0,
+        0.9
+      ],
+      "size": [
+        0.6,
+        0.5,
+        0.4
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.35,
+        0.4,
+        0.38,
+        1
+      ],
+      "emissive": 0.25,
+      "collide": false,
+      "interact": "monitor:main"
+    },
+    {
+      "id": "sec_mon_2",
+      "room": "security",
+      "pos": [
+        12.4,
+        1.0,
+        0.85
+      ],
+      "size": [
+        0.55,
+        0.45,
+        0.4
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.2,
+        0.22,
+        0.2,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "sec_mon_3",
+      "room": "security",
+      "pos": [
+        13.1,
+        1.0,
+        0.9
+      ],
+      "size": [
+        0.55,
+        0.45,
+        0.4
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.2,
+        0.22,
+        0.2,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "sec_chair",
+      "room": "security",
+      "pos": [
+        12.4,
+        0,
+        2.2
+      ],
+      "size": [
+        0.55,
+        0.95,
+        0.55
+      ],
+      "tex": "bed_fabric",
+      "tint": [
+        0.4,
+        0.38,
+        0.36,
+        1
+      ]
+    },
+    {
+      "id": "sec_keysboard",
+      "room": "security",
+      "type": "quad",
+      "pos": [
+        14.42,
+        1.5,
+        2.8
+      ],
+      "size": [
+        1.0,
+        0.8,
+        1
+      ],
+      "yaw": -90,
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "key_1a_prop",
+      "room": "security",
+      "pos": [
+        14.3,
+        1.45,
+        2.6
+      ],
+      "size": [
+        0.07,
+        0.14,
+        0.05
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "pickup:key_1a"
+    },
+    {
+      "id": "key_master_prop",
+      "room": "security",
+      "pos": [
+        14.3,
+        1.45,
+        3.0
+      ],
+      "size": [
+        0.07,
+        0.14,
+        0.05
+      ],
+      "tex": "elevator_doors",
+      "hidden": true,
+      "collide": false,
+      "interact": "pickup:key_master"
+    },
+    {
+      "id": "handover_note",
+      "room": "security",
+      "type": "quad",
+      "pos": [
+        12.9,
+        1.01,
+        1.2
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": 12,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:handover_note"
+    },
+    {
+      "id": "sec_shelf",
+      "room": "security",
+      "pos": [
+        10.3,
+        0,
+        3.9
+      ],
+      "size": [
+        0.4,
+        1.8,
+        1.2
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "mail_slots",
+      "room": "mailroom",
+      "pos": [
+        14.1,
+        0.4,
+        6.2
+      ],
+      "size": [
+        0.35,
+        1.8,
+        2.8
+      ],
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "mail_table",
+      "room": "mailroom",
+      "pos": [
+        11.5,
+        0,
+        6.8
+      ],
+      "size": [
+        1.6,
+        0.95,
+        0.8
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "mail_pkg1",
+      "room": "mailroom",
+      "pos": [
+        11.2,
+        0.95,
+        6.7
+      ],
+      "size": [
+        0.4,
+        0.3,
+        0.35
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.7,
+        0.6,
+        0.5,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "mail_pkg2",
+      "room": "mailroom",
+      "pos": [
+        12.8,
+        0,
+        5.0
+      ],
+      "size": [
+        0.6,
+        0.5,
+        0.5
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.65,
+        0.55,
+        0.45,
+        1
+      ]
+    },
+    {
+      "id": "mail_flyer",
+      "room": "mailroom",
+      "type": "quad",
+      "pos": [
+        10.075,
+        1.45,
+        5.6
+      ],
+      "size": [
+        0.35,
+        0.5,
+        1
+      ],
+      "yaw": 90,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:tenant_letter_2a"
+    },
+    {
+      "id": "wash_1",
+      "room": "laundry",
+      "pos": [
+        0.6,
+        0,
+        9.2
+      ],
+      "size": [
+        0.85,
+        1.0,
+        0.8
+      ],
+      "tex": "elevator_doors"
+    },
+    {
+      "id": "wash_2",
+      "room": "laundry",
+      "pos": [
+        1.6,
+        0,
+        9.2
+      ],
+      "size": [
+        0.85,
+        1.0,
+        0.8
+      ],
+      "tex": "elevator_doors"
+    },
+    {
+      "id": "wash_3",
+      "room": "laundry",
+      "pos": [
+        2.6,
+        0,
+        9.2
+      ],
+      "size": [
+        0.85,
+        1.0,
+        0.8
+      ],
+      "tex": "elevator_doors"
+    },
+    {
+      "id": "wash_4",
+      "room": "laundry",
+      "pos": [
+        3.6,
+        0,
+        9.2
+      ],
+      "size": [
+        0.85,
+        1.0,
+        0.8
+      ],
+      "tex": "elevator_doors",
+      "interact": "action:laundry_stop",
+      "emissive": 0.12
+    },
+    {
+      "id": "laundry_shelf",
+      "room": "laundry",
+      "pos": [
+        5.5,
+        0,
+        11
+      ],
+      "size": [
+        0.45,
+        1.7,
+        1.6
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "laundry_bin",
+      "room": "laundry",
+      "pos": [
+        0.7,
+        0,
+        12.8
+      ],
+      "size": [
+        0.6,
+        0.7,
+        0.6
+      ],
+      "tex": "plaster",
+      "tint": [
+        0.6,
+        0.6,
+        0.62,
+        1
+      ]
+    },
+    {
+      "id": "boiler_pipes",
+      "room": "boiler_hall",
+      "pos": [
+        9.7,
+        0,
+        11
+      ],
+      "size": [
+        0.25,
+        2.6,
+        5.5
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.5,
+        0.45,
+        0.4,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "breaker",
+      "room": "boiler_hall",
+      "type": "quad",
+      "pos": [
+        6.08,
+        1.45,
+        10.5
+      ],
+      "size": [
+        0.8,
+        1.1,
+        1
+      ],
+      "yaw": 90,
+      "tex": "breaker_panel",
+      "collide": false,
+      "interact": "switch:breaker"
+    },
+    {
+      "id": "wetfloor",
+      "room": "boiler_hall",
+      "pos": [
+        7.5,
+        0,
+        9.0
+      ],
+      "size": [
+        0.35,
+        0.6,
+        0.35
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.85,
+        0.75,
+        0.3,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "e0b0",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.15,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "e0b1",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.3,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_1"
+    },
+    {
+      "id": "e0b2",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.45,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_2"
+    },
+    {
+      "id": "e0b3",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.6,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_3"
+    },
+    {
+      "id": "e0b4",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.75,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_4"
+    },
+    {
+      "id": "e0bB",
+      "room": "elevator_0",
+      "pos": [
+        5.85,
+        1.0,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.9,
+        0.3,
+        0.25,
+        1
+      ],
+      "hidden": true,
+      "collide": false,
+      "interact": "switch:elev_b1"
+    },
+    {
+      "id": "e1b0",
+      "room": "elevator_1",
+      "pos": [
+        5.85,
+        4.35,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "e1b2",
+      "room": "elevator_1",
+      "pos": [
+        5.85,
+        4.5,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_2"
+    },
+    {
+      "id": "e1b3",
+      "room": "elevator_1",
+      "pos": [
+        5.85,
+        4.65,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_3"
+    },
+    {
+      "id": "e1b4",
+      "room": "elevator_1",
+      "pos": [
+        5.85,
+        4.8,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_4"
+    },
+    {
+      "id": "e1bB",
+      "room": "elevator_1",
+      "pos": [
+        5.85,
+        4.2,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.9,
+        0.3,
+        0.25,
+        1
+      ],
+      "hidden": true,
+      "collide": false,
+      "interact": "switch:elev_b1"
+    },
+    {
+      "id": "e2b0",
+      "room": "elevator_2",
+      "pos": [
+        5.85,
+        7.55,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "e2b1",
+      "room": "elevator_2",
+      "pos": [
+        5.85,
+        7.7,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_1"
+    },
+    {
+      "id": "e2b3",
+      "room": "elevator_2",
+      "pos": [
+        5.85,
+        7.85,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_3"
+    },
+    {
+      "id": "e2b4",
+      "room": "elevator_2",
+      "pos": [
+        5.85,
+        8.0,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_4"
+    },
+    {
+      "id": "e2bB",
+      "room": "elevator_2",
+      "pos": [
+        5.85,
+        7.4,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.9,
+        0.3,
+        0.25,
+        1
+      ],
+      "hidden": true,
+      "collide": false,
+      "interact": "switch:elev_b1"
+    },
+    {
+      "id": "e3b0",
+      "room": "elevator_3",
+      "pos": [
+        5.85,
+        10.75,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "e3b1",
+      "room": "elevator_3",
+      "pos": [
+        5.85,
+        10.9,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_1"
+    },
+    {
+      "id": "e3b2",
+      "room": "elevator_3",
+      "pos": [
+        5.85,
+        11.05,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_2"
+    },
+    {
+      "id": "e3b4",
+      "room": "elevator_3",
+      "pos": [
+        5.85,
+        11.2,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_4"
+    },
+    {
+      "id": "e3bB",
+      "room": "elevator_3",
+      "pos": [
+        5.85,
+        10.6,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.9,
+        0.3,
+        0.25,
+        1
+      ],
+      "hidden": true,
+      "collide": false,
+      "interact": "switch:elev_b1"
+    },
+    {
+      "id": "e4b0",
+      "room": "elevator_4",
+      "pos": [
+        5.85,
+        13.95,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "e4b1",
+      "room": "elevator_4",
+      "pos": [
+        5.85,
+        14.1,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_1"
+    },
+    {
+      "id": "e4b2",
+      "room": "elevator_4",
+      "pos": [
+        5.85,
+        14.25,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_2"
+    },
+    {
+      "id": "e4b3",
+      "room": "elevator_4",
+      "pos": [
+        5.85,
+        14.4,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_3"
+    },
+    {
+      "id": "e4bB",
+      "room": "elevator_4",
+      "pos": [
+        5.85,
+        13.8,
+        -3.5
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.9,
+        0.3,
+        0.25,
+        1
+      ],
+      "hidden": true,
+      "collide": false,
+      "interact": "switch:elev_b1"
+    },
+    {
+      "id": "ebB0",
+      "room": "elevator_b1",
+      "pos": [
+        5.85,
+        -2.05,
+        -0.7
+      ],
+      "size": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "switch:elev_0"
+    },
+    {
+      "id": "hall1_board",
+      "room": "hall_1",
+      "type": "quad",
+      "pos": [
+        6,
+        4.7,
+        -2.725
+      ],
+      "size": [
+        1.4,
+        0.9,
+        1
+      ],
+      "yaw": 0,
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "hall2_board",
+      "room": "hall_2",
+      "type": "quad",
+      "pos": [
+        6,
+        7.9,
+        -2.725
+      ],
+      "size": [
+        1.4,
+        0.9,
+        1
+      ],
+      "yaw": 0,
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "hall3_board",
+      "room": "hall_3",
+      "type": "quad",
+      "pos": [
+        6,
+        11.1,
+        -2.725
+      ],
+      "size": [
+        1.4,
+        0.9,
+        1
+      ],
+      "yaw": 0,
+      "tex": "cork_board",
+      "collide": false
+    },
+    {
+      "id": "hall4_note",
+      "room": "hall_4",
+      "type": "quad",
+      "pos": [
+        6,
+        14.3,
+        -2.725
+      ],
+      "size": [
+        0.4,
+        0.55,
+        1
+      ],
+      "yaw": 0,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:maintenance_4a"
+    },
+    {
+      "id": "b1_bed",
+      "room": "apt_1B",
+      "pos": [
+        0.9,
+        3.2,
+        4.8
+      ],
+      "size": [
+        1.5,
+        0.55,
+        2.0
+      ],
+      "tex": "bed_fabric"
+    },
+    {
+      "id": "b1_table",
+      "room": "apt_1B",
+      "pos": [
+        3.0,
+        3.2,
+        1.2
+      ],
+      "size": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "b1_chair",
+      "room": "apt_1B",
+      "pos": [
+        2.2,
+        3.2,
+        1.9
+      ],
+      "size": [
+        0.5,
+        0.9,
+        0.5
+      ],
+      "tex": "wood_table",
+      "tint": [
+        0.7,
+        0.65,
+        0.6,
+        1
+      ]
+    },
+    {
+      "id": "b1_wardrobe",
+      "room": "apt_1B",
+      "pos": [
+        0.5,
+        3.2,
+        0.6
+      ],
+      "size": [
+        1.0,
+        2.0,
+        0.6
+      ],
+      "tex": "door_wood"
+    },
+    {
+      "id": "b1_kettle",
+      "room": "apt_1B",
+      "pos": [
+        3.4,
+        4.0,
+        1.0
+      ],
+      "size": [
+        0.2,
+        0.25,
+        0.2
+      ],
+      "tex": "elevator_doors",
+      "collide": false
+    },
+    {
+      "id": "win@A_1b",
+      "room": "apt_1B",
+      "type": "quad",
+      "pos": [
+        0.075,
+        4.7,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": 90,
+      "tex": "window_night",
+      "emissive": 0.45,
+      "collide": false
+    },
+    {
+      "id": "win@B_1b",
+      "room": "apt_1B",
+      "type": "quad",
+      "pos": [
+        0.075,
+        4.7,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": 90,
+      "tex": "paper_aged",
+      "emissive": 1.6,
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "b1_curtain",
+      "room": "apt_1B",
+      "type": "quad",
+      "pos": [
+        0.11,
+        4.75,
+        2.2
+      ],
+      "size": [
+        0.5,
+        1.5,
+        1
+      ],
+      "yaw": 90,
+      "tex": "curtain",
+      "collide": false
+    },
+    {
+      "id": "b1_photo",
+      "room": "apt_1B",
+      "type": "quad",
+      "pos": [
+        4.425,
+        4.8,
+        2.4
+      ],
+      "size": [
+        0.4,
+        0.55,
+        1
+      ],
+      "yaw": -90,
+      "tex": "protagonist_photo",
+      "collide": false,
+      "interact": "read:photo_frame_1b"
+    },
+    {
+      "id": "bath_sink",
+      "room": "bath_1b",
+      "pos": [
+        5.5,
+        3.2,
+        4.6
+      ],
+      "size": [
+        0.6,
+        0.85,
+        0.5
+      ],
+      "tex": "bathroom_tile"
+    },
+    {
+      "id": "bath_mirror_frame",
+      "room": "bath_1b",
+      "pos": [
+        5.93,
+        4.35,
+        4.9
+      ],
+      "size": [
+        0.06,
+        1.0,
+        0.7
+      ],
+      "tex": "wood_table",
+      "collide": false
+    },
+    {
+      "id": "bath_towel_reflect",
+      "room": "bath_1b",
+      "type": "billboard",
+      "pos": [
+        4.8,
+        3.2,
+        5.5
+      ],
+      "size": [
+        0.8,
+        1.9,
+        1
+      ],
+      "tex": "witness_s1",
+      "hidden": true,
+      "mirrorOnly": true,
+      "collide": false
+    },
+    {
+      "id": "a1_sheet1",
+      "room": "apt_1A",
+      "pos": [
+        7.5,
+        3.2,
+        2.0
+      ],
+      "size": [
+        1.8,
+        1.0,
+        0.9
+      ],
+      "tex": "plaster",
+      "tint": [
+        0.82,
+        0.82,
+        0.8,
+        1
+      ]
+    },
+    {
+      "id": "a1_sheet2",
+      "room": "apt_1A",
+      "pos": [
+        10.5,
+        3.2,
+        4.5
+      ],
+      "size": [
+        1.0,
+        1.4,
+        1.0
+      ],
+      "tex": "plaster",
+      "tint": [
+        0.8,
+        0.8,
+        0.78,
+        1
+      ]
+    },
+    {
+      "id": "a1_boxes",
+      "room": "apt_1A",
+      "pos": [
+        11.2,
+        3.2,
+        1.0
+      ],
+      "size": [
+        1.2,
+        1.1,
+        0.9
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.7,
+        0.6,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "a1_tv",
+      "room": "apt_1A",
+      "pos": [
+        6.6,
+        3.2,
+        4.8
+      ],
+      "size": [
+        0.8,
+        0.7,
+        0.6
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.3,
+        0.32,
+        0.3,
+        1
+      ],
+      "interact": "action:tv_1a"
+    },
+    {
+      "id": "a1_stain",
+      "room": "apt_1A",
+      "type": "quad",
+      "pos": [
+        9,
+        5.82,
+        3.0
+      ],
+      "size": [
+        1.8,
+        1.2,
+        1
+      ],
+      "yaw": 0,
+      "tex": "concrete_wall",
+      "tint": [
+        0.55,
+        0.5,
+        0.45,
+        1
+      ],
+      "collide": false,
+      "interact": "action:inspect_stain"
+    },
+    {
+      "id": "figure_1a",
+      "room": "apt_1A",
+      "type": "billboard",
+      "pos": [
+        10.8,
+        3.2,
+        5.4
+      ],
+      "size": [
+        0.85,
+        2.05,
+        1
+      ],
+      "tex": "witness_s1",
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "win@A_1a",
+      "room": "apt_1A",
+      "type": "quad",
+      "pos": [
+        11.925,
+        4.7,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "window_night",
+      "emissive": 0.45,
+      "collide": false
+    },
+    {
+      "id": "win@B_1a",
+      "room": "apt_1A",
+      "type": "quad",
+      "pos": [
+        11.925,
+        4.7,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "paper_aged",
+      "emissive": 1.6,
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "h2a_box1",
+      "room": "apt_2A",
+      "pos": [
+        1.0,
+        6.4,
+        1.0
+      ],
+      "size": [
+        1.1,
+        1.6,
+        1.0
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.66,
+        0.58,
+        0.48,
+        1
+      ]
+    },
+    {
+      "id": "h2a_box2",
+      "room": "apt_2A",
+      "pos": [
+        2.4,
+        6.4,
+        1.2
+      ],
+      "size": [
+        1.0,
+        2.1,
+        0.9
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.62,
+        0.55,
+        0.46,
+        1
+      ]
+    },
+    {
+      "id": "h2a_box3",
+      "room": "apt_2A",
+      "pos": [
+        1.2,
+        6.4,
+        3.2
+      ],
+      "size": [
+        1.3,
+        1.2,
+        1.1
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.68,
+        0.6,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "h2a_box4",
+      "room": "apt_2A",
+      "pos": [
+        3.8,
+        6.4,
+        4.6
+      ],
+      "size": [
+        1.2,
+        1.8,
+        1.0
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.64,
+        0.57,
+        0.47,
+        1
+      ]
+    },
+    {
+      "id": "h2a_box5",
+      "room": "apt_2A",
+      "pos": [
+        4.9,
+        6.4,
+        2.2
+      ],
+      "size": [
+        0.9,
+        1.4,
+        0.9
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.66,
+        0.58,
+        0.48,
+        1
+      ]
+    },
+    {
+      "id": "h2a_papers",
+      "room": "apt_2A",
+      "type": "quad",
+      "pos": [
+        2.0,
+        6.41,
+        4.9
+      ],
+      "size": [
+        1.4,
+        1.0,
+        1
+      ],
+      "yaw": 0,
+      "tex": "paper_aged",
+      "collide": false,
+      "flat": true
+    },
+    {
+      "id": "h2a_table",
+      "room": "apt_2A",
+      "pos": [
+        4.6,
+        6.4,
+        5.3
+      ],
+      "size": [
+        1.0,
+        0.8,
+        0.7
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "h2a_letter",
+      "room": "apt_2A",
+      "type": "quad",
+      "pos": [
+        4.6,
+        7.21,
+        5.3
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": 8,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:hoarder_letter"
+    },
+    {
+      "id": "h2a_radio",
+      "room": "apt_2A",
+      "pos": [
+        0.6,
+        8.0,
+        5.4
+      ],
+      "size": [
+        0.4,
+        0.25,
+        0.25
+      ],
+      "tex": "wood_table",
+      "tint": [
+        0.45,
+        0.35,
+        0.3,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "c2_dresser",
+      "room": "apt_2C",
+      "pos": [
+        8.0,
+        6.4,
+        5.3
+      ],
+      "size": [
+        1.6,
+        0.9,
+        0.6
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "c2_stool",
+      "room": "apt_2C",
+      "pos": [
+        8.0,
+        6.4,
+        4.3
+      ],
+      "size": [
+        0.45,
+        0.55,
+        0.45
+      ],
+      "tex": "bed_fabric",
+      "tint": [
+        0.6,
+        0.5,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "c2_mirror_frame_a",
+      "room": "apt_2C",
+      "pos": [
+        6.07,
+        7.75,
+        2.0
+      ],
+      "size": [
+        0.06,
+        1.5,
+        1.0
+      ],
+      "tex": "wood_table",
+      "collide": false
+    },
+    {
+      "id": "c2_mirror_frame_b",
+      "room": "apt_2C",
+      "pos": [
+        9.0,
+        7.75,
+        5.93
+      ],
+      "size": [
+        1.0,
+        1.5,
+        0.06
+      ],
+      "tex": "wood_table",
+      "collide": false
+    },
+    {
+      "id": "c2_covered",
+      "room": "apt_2C",
+      "type": "quad",
+      "pos": [
+        11.2,
+        7.7,
+        5.9
+      ],
+      "size": [
+        1.1,
+        1.7,
+        1
+      ],
+      "yaw": 180,
+      "tex": "curtain",
+      "collide": false,
+      "interact": "action:uncover_2c"
+    },
+    {
+      "id": "c2_mirror_c_frame",
+      "room": "apt_2C",
+      "pos": [
+        11.2,
+        7.7,
+        5.96
+      ],
+      "size": [
+        1.15,
+        1.75,
+        0.05
+      ],
+      "tex": "wood_table",
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "c2_note",
+      "room": "apt_2C",
+      "type": "quad",
+      "pos": [
+        8.0,
+        7.31,
+        5.2
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": -5,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:mirror_note_2c"
+    },
+    {
+      "id": "win@A_2c",
+      "room": "apt_2C",
+      "type": "quad",
+      "pos": [
+        11.925,
+        7.9,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "window_night",
+      "emissive": 0.45,
+      "collide": false
+    },
+    {
+      "id": "win@B_2c",
+      "room": "apt_2C",
+      "type": "quad",
+      "pos": [
+        11.925,
+        7.9,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "paper_aged",
+      "emissive": 1.6,
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "n3_crib",
+      "room": "apt_3B",
+      "pos": [
+        1.2,
+        9.6,
+        4.6
+      ],
+      "size": [
+        1.3,
+        0.9,
+        0.8
+      ],
+      "tex": "bed_fabric",
+      "tint": [
+        0.85,
+        0.83,
+        0.8,
+        1
+      ]
+    },
+    {
+      "id": "n3_chair",
+      "room": "apt_3B",
+      "pos": [
+        3.6,
+        9.6,
+        4.4
+      ],
+      "size": [
+        0.6,
+        1.0,
+        0.6
+      ],
+      "tex": "wood_table",
+      "interact": "action:look_chair"
+    },
+    {
+      "id": "n3_mobile",
+      "room": "apt_3B",
+      "pos": [
+        1.2,
+        11.4,
+        4.6
+      ],
+      "size": [
+        0.5,
+        0.3,
+        0.5
+      ],
+      "tex": "paper_aged",
+      "tint": [
+        0.8,
+        0.75,
+        0.7,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "n3_drawing",
+      "room": "apt_3B",
+      "type": "quad",
+      "pos": [
+        0.075,
+        10.8,
+        2.4
+      ],
+      "size": [
+        0.5,
+        0.4,
+        1
+      ],
+      "yaw": 90,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:child_drawing"
+    },
+    {
+      "id": "n3_toybox",
+      "room": "apt_3B",
+      "pos": [
+        4.8,
+        9.6,
+        0.8
+      ],
+      "size": [
+        0.8,
+        0.5,
+        0.6
+      ],
+      "tex": "wood_table",
+      "tint": [
+        0.7,
+        0.55,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "d3_sofa",
+      "room": "living_3d",
+      "pos": [
+        7.4,
+        9.6,
+        1.0
+      ],
+      "size": [
+        1.9,
+        0.8,
+        0.9
+      ],
+      "tex": "bed_fabric",
+      "tint": [
+        0.5,
+        0.45,
+        0.42,
+        1
+      ]
+    },
+    {
+      "id": "d3_tv",
+      "room": "living_3d",
+      "pos": [
+        10.8,
+        9.6,
+        1.0
+      ],
+      "size": [
+        0.9,
+        0.8,
+        0.6
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.3,
+        0.32,
+        0.3,
+        1
+      ]
+    },
+    {
+      "id": "d3_bed",
+      "room": "bed_3d",
+      "pos": [
+        6.8,
+        9.6,
+        5.0
+      ],
+      "size": [
+        1.5,
+        0.55,
+        2.0
+      ],
+      "tex": "bed_fabric"
+    },
+    {
+      "id": "d3_dicta",
+      "room": "bed_3d",
+      "pos": [
+        8.9,
+        10.16,
+        4.4
+      ],
+      "size": [
+        0.25,
+        0.1,
+        0.15
+      ],
+      "tex": "elevator_doors",
+      "collide": false,
+      "interact": "action:dictaphone"
+    },
+    {
+      "id": "d3_nightstand",
+      "room": "bed_3d",
+      "pos": [
+        8.9,
+        9.6,
+        4.4
+      ],
+      "size": [
+        0.5,
+        0.55,
+        0.45
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "d3_leak",
+      "room": "bed_3d",
+      "type": "quad",
+      "pos": [
+        8.0,
+        12.22,
+        4.8
+      ],
+      "size": [
+        1.5,
+        1.0,
+        1
+      ],
+      "yaw": 0,
+      "tex": "concrete_wall",
+      "tint": [
+        0.5,
+        0.47,
+        0.44,
+        1
+      ],
+      "collide": false,
+      "interact": "action:inspect_leak"
+    },
+    {
+      "id": "d3_bucket",
+      "room": "bed_3d",
+      "pos": [
+        8.0,
+        9.6,
+        4.8
+      ],
+      "size": [
+        0.35,
+        0.4,
+        0.35
+      ],
+      "tex": "elevator_doors",
+      "collide": false
+    },
+    {
+      "id": "dk_tray",
+      "room": "dark_3d",
+      "pos": [
+        11.3,
+        10.5,
+        4.2
+      ],
+      "size": [
+        0.9,
+        0.15,
+        0.5
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.5,
+        0.3,
+        0.3,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "dk_bench",
+      "room": "dark_3d",
+      "pos": [
+        11.3,
+        9.6,
+        4.2
+      ],
+      "size": [
+        1.1,
+        0.9,
+        0.6
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "dk_photos",
+      "room": "dark_3d",
+      "type": "quad",
+      "pos": [
+        10.7,
+        11.3,
+        5.94
+      ],
+      "size": [
+        1.2,
+        0.5,
+        1
+      ],
+      "yaw": 180,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:photo_log_3d"
+    },
+    {
+      "id": "dk_photo_dev",
+      "room": "dark_3d",
+      "type": "quad",
+      "pos": [
+        11.94,
+        10.9,
+        4.8
+      ],
+      "size": [
+        0.4,
+        0.55,
+        1
+      ],
+      "yaw": -90,
+      "tex": "protagonist_photo",
+      "hidden": true,
+      "collide": false,
+      "interact": "read:photo_dev_note"
+    },
+    {
+      "id": "key_records_prop",
+      "room": "dark_3d",
+      "pos": [
+        11.3,
+        10.6,
+        4.0
+      ],
+      "size": [
+        0.07,
+        0.05,
+        0.12
+      ],
+      "tex": "elevator_doors",
+      "hidden": true,
+      "collide": false,
+      "interact": "pickup:key_records"
+    },
+    {
+      "id": "s4_chair",
+      "room": "apt_4A",
+      "pos": [
+        3.0,
+        12.8,
+        4.6
+      ],
+      "size": [
+        0.55,
+        1.0,
+        0.55
+      ],
+      "yaw": 180,
+      "tex": "wood_table",
+      "tint": [
+        0.55,
+        0.5,
+        0.45,
+        1
+      ]
+    },
+    {
+      "id": "s4_scratches",
+      "room": "apt_4A",
+      "type": "quad",
+      "pos": [
+        3.0,
+        14.0,
+        5.92
+      ],
+      "size": [
+        2.2,
+        1.3,
+        1
+      ],
+      "yaw": 180,
+      "tex": "concrete_wall",
+      "tint": [
+        0.6,
+        0.55,
+        0.5,
+        1
+      ],
+      "collide": false,
+      "interact": "read:scratches_4a"
+    },
+    {
+      "id": "s4_dust",
+      "room": "apt_4A",
+      "type": "quad",
+      "pos": [
+        3.0,
+        12.81,
+        3.0
+      ],
+      "size": [
+        4.5,
+        4.5,
+        1
+      ],
+      "yaw": 0,
+      "tex": "concrete_floor",
+      "tint": [
+        0.75,
+        0.73,
+        0.7,
+        0.6
+      ],
+      "collide": false,
+      "flat": true
+    },
+    {
+      "id": "s4_lamp",
+      "room": "apt_4A",
+      "pos": [
+        0.7,
+        12.8,
+        0.7
+      ],
+      "size": [
+        0.3,
+        1.4,
+        0.3
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.4,
+        0.4,
+        0.42,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "c4@A_bed",
+      "room": "apt_4C",
+      "pos": [
+        10.8,
+        12.8,
+        4.8
+      ],
+      "size": [
+        1.5,
+        0.55,
+        2.0
+      ],
+      "tex": "bed_fabric"
+    },
+    {
+      "id": "c4@A_table",
+      "room": "apt_4C",
+      "pos": [
+        8.6,
+        12.8,
+        2.8
+      ],
+      "size": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "c4@B_bed",
+      "room": "apt_4C",
+      "pos": [
+        6.9,
+        12.8,
+        1.2
+      ],
+      "size": [
+        1.5,
+        0.55,
+        2.0
+      ],
+      "yaw": 90,
+      "tex": "bed_fabric",
+      "hidden": true
+    },
+    {
+      "id": "c4@B_table",
+      "room": "apt_4C",
+      "pos": [
+        10.9,
+        12.8,
+        2.2
+      ],
+      "size": [
+        1.2,
+        0.8,
+        0.8
+      ],
+      "hidden": true,
+      "tex": "wood_table"
+    },
+    {
+      "id": "c4@B_chair",
+      "room": "apt_4C",
+      "pos": [
+        9.0,
+        12.8,
+        4.9
+      ],
+      "size": [
+        0.5,
+        0.9,
+        0.5
+      ],
+      "hidden": true,
+      "tex": "wood_table",
+      "tint": [
+        0.7,
+        0.65,
+        0.6,
+        1
+      ]
+    },
+    {
+      "id": "c4_note",
+      "room": "apt_4C",
+      "type": "quad",
+      "pos": [
+        8.6,
+        13.61,
+        2.8
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": 3,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:room_note_4c"
+    },
+    {
+      "id": "win@A_4c",
+      "room": "apt_4C",
+      "type": "quad",
+      "pos": [
+        11.925,
+        14.3,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "window_night",
+      "emissive": 0.45,
+      "collide": false
+    },
+    {
+      "id": "win@B_4c",
+      "room": "apt_4C",
+      "type": "quad",
+      "pos": [
+        11.925,
+        14.3,
+        3.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        1
+      ],
+      "yaw": -90,
+      "tex": "paper_aged",
+      "emissive": 1.6,
+      "hidden": true,
+      "collide": false
+    },
+    {
+      "id": "boiler_main",
+      "room": "basement",
+      "pos": [
+        1.4,
+        -3.2,
+        1.4
+      ],
+      "size": [
+        2.2,
+        2.0,
+        1.6
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.55,
+        0.5,
+        0.45,
+        1
+      ]
+    },
+    {
+      "id": "bs_shelves",
+      "room": "basement",
+      "pos": [
+        9.6,
+        -3.2,
+        5.5
+      ],
+      "size": [
+        0.5,
+        1.9,
+        2.4
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "bs_sign",
+      "room": "basement",
+      "type": "quad",
+      "pos": [
+        5.0,
+        -1.7,
+        7.92
+      ],
+      "size": [
+        1.2,
+        0.8,
+        1
+      ],
+      "yaw": 180,
+      "tex": "blueprint",
+      "collide": false,
+      "interact": "read:building_plan"
+    },
+    {
+      "id": "bs_crate",
+      "room": "basement",
+      "pos": [
+        7.0,
+        -3.2,
+        6.6
+      ],
+      "size": [
+        0.9,
+        0.7,
+        0.8
+      ],
+      "tex": "wood_table",
+      "tint": [
+        0.6,
+        0.52,
+        0.45,
+        1
+      ]
+    },
+    {
+      "id": "rec_cab1",
+      "room": "records",
+      "pos": [
+        13.6,
+        -3.2,
+        1.0
+      ],
+      "size": [
+        0.5,
+        1.5,
+        0.7
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.5,
+        0.52,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "rec_cab2",
+      "room": "records",
+      "pos": [
+        13.6,
+        -3.2,
+        1.9
+      ],
+      "size": [
+        0.5,
+        1.5,
+        0.7
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.48,
+        0.5,
+        0.48,
+        1
+      ]
+    },
+    {
+      "id": "rec_cab3",
+      "room": "records",
+      "pos": [
+        13.6,
+        -3.2,
+        2.8
+      ],
+      "size": [
+        0.5,
+        1.5,
+        0.7
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.52,
+        0.54,
+        0.52,
+        1
+      ]
+    },
+    {
+      "id": "rec_cab4",
+      "room": "records",
+      "pos": [
+        13.6,
+        -3.2,
+        3.7
+      ],
+      "size": [
+        0.5,
+        1.5,
+        0.7
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.5,
+        0.52,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "rec_desk",
+      "room": "records",
+      "pos": [
+        11.5,
+        -3.2,
+        4.8
+      ],
+      "size": [
+        1.6,
+        0.85,
+        0.8
+      ],
+      "tex": "wood_table"
+    },
+    {
+      "id": "rec_1961a",
+      "room": "records",
+      "type": "quad",
+      "pos": [
+        11.2,
+        -2.34,
+        4.7
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": -6,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:records_1961_a"
+    },
+    {
+      "id": "rec_1961b",
+      "room": "records",
+      "type": "quad",
+      "pos": [
+        11.8,
+        -2.34,
+        4.9
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": 9,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:records_1961_b"
+    },
+    {
+      "id": "rec_photo",
+      "room": "records",
+      "type": "quad",
+      "pos": [
+        10.08,
+        -1.8,
+        2.5
+      ],
+      "size": [
+        0.6,
+        0.45,
+        1
+      ],
+      "yaw": 90,
+      "tex": "photo_1961",
+      "collide": false,
+      "interact": "read:photo_1961_note"
+    },
+    {
+      "id": "rec_complaints",
+      "room": "records",
+      "type": "quad",
+      "pos": [
+        12.1,
+        -2.34,
+        4.6
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": -14,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:complaint_archive"
+    },
+    {
+      "id": "rec_watchlog",
+      "room": "records",
+      "type": "quad",
+      "pos": [
+        11.5,
+        -2.33,
+        5.1
+      ],
+      "size": [
+        0.3,
+        0.4,
+        1
+      ],
+      "yaw": 2,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:watch_log_1987"
+    },
+    {
+      "id": "key_sub_prop",
+      "room": "records",
+      "pos": [
+        13.5,
+        -1.68,
+        2.8
+      ],
+      "size": [
+        0.07,
+        0.05,
+        0.12
+      ],
+      "tex": "elevator_doors",
+      "hidden": true,
+      "collide": false,
+      "interact": "pickup:key_sub"
+    },
+    {
+      "id": "sh_pipes",
+      "room": "subhall",
+      "pos": [
+        3.7,
+        -3.2,
+        11
+      ],
+      "size": [
+        0.25,
+        2.4,
+        5.5
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.45,
+        0.42,
+        0.4,
+        1
+      ],
+      "collide": false
+    },
+    {
+      "id": "sh_sump",
+      "room": "subhall",
+      "pos": [
+        0.8,
+        -3.2,
+        12.8
+      ],
+      "size": [
+        0.9,
+        0.4,
+        0.9
+      ],
+      "tex": "concrete_wall",
+      "tint": [
+        0.4,
+        0.42,
+        0.42,
+        1
+      ]
+    },
+    {
+      "id": "sh_marking",
+      "room": "subhall",
+      "type": "quad",
+      "pos": [
+        0.08,
+        -1.9,
+        11.0
+      ],
+      "size": [
+        1.2,
+        0.8,
+        1
+      ],
+      "yaw": 90,
+      "tex": "blueprint",
+      "tint": [
+        0.8,
+        0.8,
+        0.8,
+        1
+      ],
+      "collide": false,
+      "interact": "read:site3_survey"
+    },
+    {
+      "id": "v_monolith",
+      "room": "vault",
+      "pos": [
+        6.0,
+        -6.6,
+        20.5
+      ],
+      "size": [
+        1.8,
+        3.0,
+        1.8
+      ],
+      "tex": "concrete_wall",
+      "tint": [
+        0.16,
+        0.16,
+        0.19,
+        1
+      ]
+    },
+    {
+      "id": "v_stake1",
+      "room": "vault",
+      "pos": [
+        3.5,
+        -6.6,
+        18
+      ],
+      "size": [
+        0.12,
+        0.9,
+        0.12
+      ],
+      "tex": "wood_table",
+      "collide": false
+    },
+    {
+      "id": "v_stake2",
+      "room": "vault",
+      "pos": [
+        8.6,
+        -6.6,
+        22.6
+      ],
+      "size": [
+        0.12,
+        0.9,
+        0.12
+      ],
+      "tex": "wood_table",
+      "collide": false
+    },
+    {
+      "id": "v_tripod",
+      "room": "vault",
+      "pos": [
+        4.4,
+        -6.6,
+        21.6
+      ],
+      "size": [
+        0.4,
+        1.4,
+        0.4
+      ],
+      "tex": "elevator_doors",
+      "tint": [
+        0.4,
+        0.4,
+        0.42,
+        1
+      ],
+      "collide": false,
+      "interact": "read:tripod_tag"
+    },
+    {
+      "id": "v_floormarks",
+      "room": "vault",
+      "type": "quad",
+      "pos": [
+        6.0,
+        -6.59,
+        20.5
+      ],
+      "size": [
+        7.0,
+        7.0,
+        1
+      ],
+      "yaw": 0,
+      "tex": "blueprint",
+      "tint": [
+        0.5,
+        0.5,
+        0.55,
+        0.55
+      ],
+      "collide": false,
+      "flat": true
+    },
+    {
+      "id": "v_finalnote",
+      "room": "vault",
+      "type": "quad",
+      "pos": [
+        5.2,
+        -6.58,
+        17.4
+      ],
+      "size": [
+        0.35,
+        0.45,
+        1
+      ],
+      "yaw": 0,
+      "tex": "paper_aged",
+      "collide": false,
+      "interact": "read:final_note_vault"
+    }
+  ],
+  "lights": [
+    {
+      "id": "l_lobby_1",
+      "room": "lobby",
+      "pos": [
+        3,
+        2.5,
+        3
+      ],
+      "intensity": 0.9,
+      "radius": 7
+    },
+    {
+      "id": "l_lobby_2",
+      "room": "lobby",
+      "pos": [
+        7.5,
+        2.5,
+        6
+      ],
+      "intensity": 0.85,
+      "radius": 6.5
+    },
+    {
+      "id": "l_sec",
+      "room": "security",
+      "pos": [
+        12.2,
+        2.5,
+        2.2
+      ],
+      "intensity": 0.9,
+      "radius": 6,
+      "color": [
+        0.95,
+        0.95,
+        1.0
+      ]
+    },
+    {
+      "id": "l_mail",
+      "room": "mailroom",
+      "pos": [
+        12.2,
+        2.5,
+        6.2
+      ],
+      "intensity": 0.7,
+      "radius": 5.5
+    },
+    {
+      "id": "l_laundry",
+      "room": "laundry",
+      "pos": [
+        3,
+        2.5,
+        11
+      ],
+      "intensity": 0.85,
+      "radius": 7,
+      "flicker": 0.25,
+      "color": [
+        0.9,
+        0.95,
+        1.0
+      ]
+    },
+    {
+      "id": "l_boiler",
+      "room": "boiler_hall",
+      "pos": [
+        8,
+        2.5,
+        11
+      ],
+      "intensity": 0.6,
+      "radius": 6,
+      "color": [
+        1.0,
+        0.85,
+        0.6
+      ]
+    },
+    {
+      "id": "l_elev0",
+      "room": "elevator_0",
+      "pos": [
+        5,
+        2.5,
+        -1.1
+      ],
+      "intensity": 0.8,
+      "radius": 3.5
+    },
+    {
+      "id": "l_hall1_a",
+      "room": "hall_1",
+      "pos": [
+        2.5,
+        5.7,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall1_b",
+      "room": "hall_1",
+      "pos": [
+        6.5,
+        5.7,
+        -1.4
+      ],
+      "intensity": 0.7,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall1_c",
+      "room": "hall_1",
+      "pos": [
+        10.5,
+        5.7,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5,
+      "flicker": 0.15
+    },
+    {
+      "id": "l_elev1",
+      "room": "elevator_1",
+      "pos": [
+        5,
+        5.7,
+        -3.8
+      ],
+      "intensity": 0.8,
+      "radius": 3.5
+    },
+    {
+      "id": "l_1b",
+      "room": "apt_1B",
+      "pos": [
+        2.2,
+        5.7,
+        3
+      ],
+      "intensity": 0.8,
+      "radius": 6
+    },
+    {
+      "id": "l_1b_bath",
+      "room": "bath_1b",
+      "pos": [
+        5.2,
+        5.7,
+        4.9
+      ],
+      "intensity": 0.75,
+      "radius": 3.5,
+      "color": [
+        0.9,
+        0.95,
+        1.0
+      ]
+    },
+    {
+      "id": "l_1a",
+      "room": "apt_1A",
+      "pos": [
+        9,
+        5.7,
+        3
+      ],
+      "intensity": 0.65,
+      "radius": 6.5
+    },
+    {
+      "id": "l_hall2_a",
+      "room": "hall_2",
+      "pos": [
+        2.5,
+        8.9,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall2_b",
+      "room": "hall_2",
+      "pos": [
+        6.5,
+        8.9,
+        -1.4
+      ],
+      "intensity": 0.7,
+      "radius": 5.5,
+      "flicker": 0.2
+    },
+    {
+      "id": "l_hall2_c",
+      "room": "hall_2",
+      "pos": [
+        10.5,
+        8.9,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5
+    },
+    {
+      "id": "l_elev2",
+      "room": "elevator_2",
+      "pos": [
+        5,
+        8.9,
+        -3.8
+      ],
+      "intensity": 0.8,
+      "radius": 3.5
+    },
+    {
+      "id": "l_2a",
+      "room": "apt_2A",
+      "pos": [
+        3,
+        8.9,
+        3
+      ],
+      "intensity": 0.6,
+      "radius": 6.5,
+      "color": [
+        1.0,
+        0.88,
+        0.7
+      ]
+    },
+    {
+      "id": "l_2c",
+      "room": "apt_2C",
+      "pos": [
+        9,
+        8.9,
+        3
+      ],
+      "intensity": 0.75,
+      "radius": 6.5
+    },
+    {
+      "id": "l_hall3_a",
+      "room": "hall_3",
+      "pos": [
+        2.5,
+        12.1,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall3_b",
+      "room": "hall_3",
+      "pos": [
+        6.5,
+        12.1,
+        -1.4
+      ],
+      "intensity": 0.7,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall3_c",
+      "room": "hall_3",
+      "pos": [
+        10.5,
+        12.1,
+        -1.4
+      ],
+      "intensity": 0.75,
+      "radius": 5.5,
+      "flicker": 0.3
+    },
+    {
+      "id": "l_elev3",
+      "room": "elevator_3",
+      "pos": [
+        5,
+        12.1,
+        -3.8
+      ],
+      "intensity": 0.8,
+      "radius": 3.5
+    },
+    {
+      "id": "l_3b",
+      "room": "apt_3B",
+      "pos": [
+        3,
+        12.1,
+        3
+      ],
+      "intensity": 0.5,
+      "radius": 6,
+      "on": false
+    },
+    {
+      "id": "l_3d_living",
+      "room": "living_3d",
+      "pos": [
+        9,
+        12.1,
+        1.8
+      ],
+      "intensity": 0.75,
+      "radius": 5.5
+    },
+    {
+      "id": "l_3d_bed",
+      "room": "bed_3d",
+      "pos": [
+        8,
+        12.1,
+        4.8
+      ],
+      "intensity": 0.6,
+      "radius": 4.5
+    },
+    {
+      "id": "l_3d_dark",
+      "room": "dark_3d",
+      "pos": [
+        11,
+        12.1,
+        4.8
+      ],
+      "intensity": 0.7,
+      "radius": 3.5,
+      "color": [
+        1.0,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "id": "l_hall4_a",
+      "room": "hall_4",
+      "pos": [
+        2.5,
+        15.3,
+        -1.4
+      ],
+      "intensity": 0.7,
+      "radius": 5.5,
+      "flicker": 0.12
+    },
+    {
+      "id": "l_hall4_b",
+      "room": "hall_4",
+      "pos": [
+        6.5,
+        15.3,
+        -1.4
+      ],
+      "intensity": 0.65,
+      "radius": 5.5
+    },
+    {
+      "id": "l_hall4_c",
+      "room": "hall_4",
+      "pos": [
+        10.5,
+        15.3,
+        -1.4
+      ],
+      "intensity": 0.7,
+      "radius": 5.5
+    },
+    {
+      "id": "l_elev4",
+      "room": "elevator_4",
+      "pos": [
+        5,
+        15.3,
+        -3.8
+      ],
+      "intensity": 0.8,
+      "radius": 3.5
+    },
+    {
+      "id": "l_4a",
+      "room": "apt_4A",
+      "pos": [
+        3,
+        15.3,
+        3
+      ],
+      "intensity": 0.55,
+      "radius": 6,
+      "color": [
+        0.9,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "id": "l_4c",
+      "room": "apt_4C",
+      "pos": [
+        9,
+        15.3,
+        3
+      ],
+      "intensity": 0.7,
+      "radius": 6.5
+    },
+    {
+      "id": "l_bs_1",
+      "room": "basement",
+      "pos": [
+        3,
+        -0.7,
+        3
+      ],
+      "intensity": 0.6,
+      "radius": 6,
+      "color": [
+        1.0,
+        0.8,
+        0.55
+      ],
+      "flicker": 0.2
+    },
+    {
+      "id": "l_bs_2",
+      "room": "basement",
+      "pos": [
+        8,
+        -0.7,
+        6
+      ],
+      "intensity": 0.55,
+      "radius": 5.5,
+      "color": [
+        1.0,
+        0.8,
+        0.55
+      ]
+    },
+    {
+      "id": "l_elevb",
+      "room": "elevator_b1",
+      "pos": [
+        5,
+        -0.7,
+        -1.1
+      ],
+      "intensity": 0.7,
+      "radius": 3.5,
+      "flicker": 0.35
+    },
+    {
+      "id": "l_rec",
+      "room": "records",
+      "pos": [
+        12,
+        -0.7,
+        3
+      ],
+      "intensity": 0.65,
+      "radius": 5.5,
+      "color": [
+        1.0,
+        0.85,
+        0.6
+      ]
+    },
+    {
+      "id": "l_sub",
+      "room": "subhall",
+      "pos": [
+        2,
+        -0.7,
+        11
+      ],
+      "intensity": 0.5,
+      "radius": 5,
+      "color": [
+        0.95,
+        0.8,
+        0.6
+      ],
+      "flicker": 0.4
+    },
+    {
+      "id": "l_vault_1",
+      "room": "vault",
+      "pos": [
+        6,
+        -3.8,
+        20.5
+      ],
+      "intensity": 0.95,
+      "radius": 15,
+      "color": [
+        0.55,
+        0.75,
+        0.7
+      ]
+    },
+    {
+      "id": "l_vault_2",
+      "room": "vault",
+      "pos": [
+        2.5,
+        -5.2,
+        16
+      ],
+      "intensity": 0.55,
+      "radius": 9,
+      "color": [
+        0.5,
+        0.6,
+        0.7
+      ],
+      "flicker": 0.25
+    }
+  ],
+  "cams": [
+    {
+      "id": "cam_lobby",
+      "label": "LOBBY",
+      "room": "lobby",
+      "pos": [
+        9.4,
+        2.4,
+        0.6
+      ],
+      "yaw": 140,
+      "pitch": -24
+    },
+    {
+      "id": "cam_hall1",
+      "label": "HALL 1",
+      "room": "hall_1",
+      "pos": [
+        11.5,
+        5.6,
+        -0.5
+      ],
+      "yaw": 95,
+      "pitch": -16
+    },
+    {
+      "id": "cam_hall2",
+      "label": "HALL 2",
+      "room": "hall_2",
+      "pos": [
+        11.5,
+        8.8,
+        -0.5
+      ],
+      "yaw": 95,
+      "pitch": -16
+    },
+    {
+      "id": "cam_hall3",
+      "label": "HALL 3",
+      "room": "hall_3",
+      "pos": [
+        11.5,
+        12.0,
+        -0.5
+      ],
+      "yaw": 95,
+      "pitch": -16
+    },
+    {
+      "id": "cam_hall4",
+      "label": "HALL 4",
+      "room": "hall_4",
+      "pos": [
+        11.5,
+        15.2,
+        -0.5
+      ],
+      "yaw": 95,
+      "pitch": -16
+    },
+    {
+      "id": "cam_laundry",
+      "label": "LAUNDRY",
+      "room": "laundry",
+      "pos": [
+        5.4,
+        2.4,
+        8.6
+      ],
+      "yaw": 205,
+      "pitch": -22
+    },
+    {
+      "id": "cam_basement",
+      "label": "BASEMENT",
+      "room": "basement",
+      "pos": [
+        9.4,
+        -0.8,
+        0.6
+      ],
+      "yaw": 140,
+      "pitch": -20
+    },
+    {
+      "id": "cam_elev",
+      "label": "ELEVATOR",
+      "room": "elevator_0",
+      "pos": [
+        5.7,
+        2.35,
+        -2.0
+      ],
+      "yaw": 185,
+      "pitch": -28
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "mirror_lobby",
+      "room": "lobby",
+      "pos": [
+        9.93,
+        1.55,
+        5.5
+      ],
+      "yaw": -90,
+      "w": 0.55,
+      "h": 0.85
+    },
+    {
+      "id": "mirror_1b",
+      "room": "bath_1b",
+      "pos": [
+        5.9,
+        4.35,
+        4.9
+      ],
+      "yaw": -90,
+      "w": 0.6,
+      "h": 0.9
+    },
+    {
+      "id": "mirror_2c_a",
+      "room": "apt_2C",
+      "pos": [
+        6.1,
+        7.75,
+        2.0
+      ],
+      "yaw": 90,
+      "w": 0.9,
+      "h": 1.4
+    },
+    {
+      "id": "mirror_2c_b",
+      "room": "apt_2C",
+      "pos": [
+        9.0,
+        7.75,
+        5.9
+      ],
+      "yaw": 180,
+      "w": 0.9,
+      "h": 1.4
+    },
+    {
+      "id": "mirror_2c_c",
+      "room": "apt_2C",
+      "pos": [
+        11.2,
+        7.7,
+        5.9
+      ],
+      "yaw": 180,
+      "w": 1.05,
+      "h": 1.6
+    }
+  ]
+}

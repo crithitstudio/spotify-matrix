@@ -30,6 +30,10 @@ Font* Engine::loadFont(const std::string& ttfPath, float pixelHeight) {
     stbtt_PackSetOversampling(&pack, 2, 2);
     FontBake bake;
     stbtt_PackFontRange(&pack, font->ttf.data(), 0, pixelHeight, FIRST_CHAR, NUM_CHARS, bake.chars);
+    // general punctuation (en/em dash, quotes, ellipsis, bullet)
+    constexpr int PUNCT_FIRST = 0x2010, PUNCT_COUNT = 0x2030 - 0x2010;
+    stbtt_packedchar punct[PUNCT_COUNT];
+    stbtt_PackFontRange(&pack, font->ttf.data(), 0, pixelHeight, PUNCT_FIRST, PUNCT_COUNT, punct);
     stbtt_PackEnd(&pack);
 
     // coverage -> white RGBA
@@ -47,8 +51,7 @@ Font* Engine::loadFont(const std::string& ttfPath, float pixelHeight) {
     font->descent = desc * scale;
     font->lineGap = gap * scale;
 
-    for (int i = 0; i < NUM_CHARS; ++i) {
-        const stbtt_packedchar& pc = bake.chars[i];
+    auto storeGlyph = [&](uint32_t cp, const stbtt_packedchar& pc) {
         Glyph g;
         g.x0 = pc.x0 / (float)ATLAS_W;
         g.y0 = pc.y0 / (float)ATLAS_H;
@@ -59,8 +62,10 @@ Font* Engine::loadFont(const std::string& ttfPath, float pixelHeight) {
         g.xadv = pc.xadvance;
         g.w = (float)(pc.x1 - pc.x0) / 2.0f;   // oversampled 2x
         g.h = (float)(pc.y1 - pc.y0) / 2.0f;
-        font->glyphs[(uint32_t)(FIRST_CHAR + i)] = g;
-    }
+        font->glyphs[cp] = g;
+    };
+    for (int i = 0; i < NUM_CHARS; ++i) storeGlyph((uint32_t)(FIRST_CHAR + i), bake.chars[i]);
+    for (int i = 0; i < PUNCT_COUNT; ++i) storeGlyph((uint32_t)(PUNCT_FIRST + i), punct[i]);
     impl->fonts.push_back(font);
     return font;
 }

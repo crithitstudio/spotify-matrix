@@ -1,0 +1,71 @@
+name: THE OBSERVER — build & test
+
+on:
+  push:
+    branches: [ "claude/observer-game-concept-cue7yy", "main" ]
+    paths: [ "observer/**", ".github/workflows/observer-ci.yml" ]
+  pull_request:
+    paths: [ "observer/**" ]
+  workflow_dispatch: {}
+
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build libvulkan-dev glslang-tools \
+            libglfw3-dev mesa-vulkan-drivers
+      - name: Configure
+        run: cmake -S observer -B observer/build -G Ninja -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build observer/build
+      - name: Unit tests
+        working-directory: observer
+        run: ./build/observer_tests
+      - name: Headless render test (CPU Vulkan)
+        working-directory: observer
+        run: |
+          export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/lvp_icd.x86_64.json
+          [ -f "$VK_DRIVER_FILES" ] || export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/lvp_icd.json
+          ./build/iris_smoke smoke.png engine/shaders/spv
+          ./build/observer --headless --newgame --frames 90 --mute \
+            --width 640 --height 360 --sim "wait:1.5; shot:playtest.png; quit"
+      - name: Package
+        working-directory: observer
+        run: bash tools/package.sh linux-x64
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: TheObserver-linux-x64
+          path: observer/dist/TheObserver-linux-x64.tar.gz
+      - name: Upload render proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-proof
+          path: |
+            observer/smoke.png
+            observer/playtest.png
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S observer -B observer/build -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build observer/build --config Release
+      - name: Unit tests
+        working-directory: observer
+        run: ./build/Release/observer_tests.exe
+      - name: Package
+        working-directory: observer
+        shell: bash
+        run: bash tools/package.sh windows-x64 build/Release
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: TheObserver-windows-x64
+          path: observer/dist/TheObserver-windows-x64.zip

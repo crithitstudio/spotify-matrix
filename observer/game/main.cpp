@@ -165,6 +165,15 @@ void gameTickSim(Game& g, float dt) {
     } else if (verb == "do") {
         g.execAction(cmd.substr(3));
         done = true;
+    } else if (verb == "dump") {
+        std::fprintf(stderr,
+                     "[dump] t=%.1f act=%d room=%d pos=(%.1f,%.1f,%.1f) yaw=%.0f | witness vis=%d "
+                     "mode=%s stage=%d cap=%d pos=(%.1f,%.1f,%.1f) know=%.2f gaze=%.2f\n",
+                     g.worldTime, g.act, g.playerRoom, g.pPos.x, g.pPos.y, g.pPos.z,
+                     degrees(g.pYaw), (int)g.witness.visible, g.witness.mode.c_str(),
+                     g.witness.stage, g.witness.stageCap, g.witness.pos.x, g.witness.pos.y,
+                     g.witness.pos.z, g.witness.knowledge, g.witness.playerGazeOnMe);
+        done = true;
     } else if (verb == "shot") {
         g.flags.insert("cli_shot_now:" + tok(1));
         done = true;
@@ -243,7 +252,8 @@ void Game::tick(float dt) {
         }
     }
 
-    if (!simCmds.empty() && (screen == Screen::Playing || screen == Screen::Monitor))
+    if (!simCmds.empty() && (screen == Screen::Playing || screen == Screen::Monitor ||
+                             screen == Screen::Ending || screen == Screen::Credits))
         gameTickSim(*this, dt);
 
     Input& in = eng.input();

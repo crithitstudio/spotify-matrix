@@ -59,11 +59,12 @@ void Game::renderWorldViews() {
         float yaw = std::atan2(d.x, d.z);
         float h = 2.05f + 0.06f * witness.stage;
         w.model = mat4::translate(witness.pos) * mat4::rotateY(yaw) * mat4::scale({h * 0.42f, h, 1});
-        float solidity = 0.45f + 0.13f * witness.stage +
+        float solidity = 0.55f + 0.11f * witness.stage +
                          std::fmin(witness.knowledge / 60.0f, 0.25f);
-        w.tint = {1, 1, 1, clampf(solidity, 0, 0.98f)};
-        w.flags = DRAW_ALPHA | DRAW_UNLIT;
-        w.emissive = 0.02f;
+        w.tint = {1.35f, 1.35f, 1.4f, clampf(solidity, 0, 0.98f)};
+        // lit, not unlit: room light and the flashlight are what reveal it.
+        w.flags = DRAW_ALPHA;
+        w.emissive = 0.05f;
         items.push_back(w);
     }
 
